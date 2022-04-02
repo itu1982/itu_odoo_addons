@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+	
+		<!-- Añadimos el Boton Factura simplificada en el header -->
+        <record id="SG_id" model="ir.ui.view">
+            <field name="name">Fact_Simp_Button</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                     <button name="Fact_Simplificada" string="Factura Simplificada" class="oe_highlight" type="object"/>
+                </xpath>
+            </field>
+        </record>
+		
+	</data>
+</odoo>
