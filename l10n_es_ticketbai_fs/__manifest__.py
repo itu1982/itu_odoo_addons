@@ -2,7 +2,7 @@
 {
     'name' : 'TicketBAI FS',
     "summary": "Agrega la posibilidad de crear facturas simplificadas desde facturacion/contabilidad.",
-    "version": "14.0.2.5.4",
+    "version": "14.0.0.0.2",
     "category": "Accounting & Finance",
     "website": "",
     "author": "Gorka Iturralde",
