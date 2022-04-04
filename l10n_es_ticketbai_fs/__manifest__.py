@@ -14,7 +14,6 @@
         'itu_log',
     ],
     'data': [
-        'views/account_move.xml',
         'views/res_company.xml',
         'security/ir.model.access.csv',
         'data/data_tbai_fs.xml',

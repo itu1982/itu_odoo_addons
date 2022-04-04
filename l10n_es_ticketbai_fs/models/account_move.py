@@ -18,6 +18,20 @@ ItuLog = itu_log.ItuLog()
 
 class TbaiAccountMoveFS(models.Model):
     _inherit = 'account.move'
+    tbai_refund_key = fields.Selection(selection_add=[(RefundCode.R5.value, 'Factura rectificativa simplificada'),],)
+    
+#    tbai_refund_key = fields.Selection(
+#        selection=[
+#            (RefundCode.R1.value, "Art. 80.1, 80.2, 80.6 and rights founded error"),
+#            (RefundCode.R2.value, "Art. 80.3"),
+#            (RefundCode.R3.value, "Art. 80.4"),
+#            (RefundCode.R4.value, "Art. 80 - other"),
+#            (RefundCode.R5.value, "Rectificacion de Factura simplificada"),
+#        ],
+#        help="BOE-A-1992-28740. Ley 37/1992, de 28 de diciembre, del Impuesto sobre el "
+#        "Valor Añadido. Artículo 80. Modificación de la base imponible.",
+#        copy=False,
+#    )
 
     def action_post(self):
         ItuLog.DebugText(" **************** ACTION POST ************** ")
@@ -32,11 +46,22 @@ class TbaiAccountMoveFS(models.Model):
         
     @api.onchange("reversed_entry_id")
     def onchange_tbai_reversed_entry_id(self):
+        ItuLog.DebugText(" **************** onchange_tbai_reversed_entry_id ************** ")
         if self.reversed_entry_id:
             if not self.partner_id.vat and self.partner_id.aeat_anonymous_cash_customer:
+                ItuLog.DebugText(" **************** onchange_tbai_reversed_entry_id R5 ************** ")
                 self.tbai_refund_key = RefundCode.R5.value
         result = super(TbaiAccountMoveFS, self).onchange_tbai_reversed_entry_id()
-
+        
+    def tbai_is_invoice_refund(self):
+        ItuLog.DebugText(" **************** tbai_is_invoice_refund ************** ")
+        result = super(TbaiAccountMoveFS, self).tbai_is_invoice_refund()
+        if result and not self.partner_id.vat and self.partner_id.aeat_anonymous_cash_customer:
+            ItuLog.DebugText(" **************** tbai_is_invoice_refund R5 ************** ")
+            self.tbai_refund_key = RefundCode.R5.value    
+        return result
+        
+        
 #    @api.model_create_multi
 #    def create(self, vals):
         
