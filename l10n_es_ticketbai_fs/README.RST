@@ -7,13 +7,9 @@ puedes encontrar en https://github.com/OCA/l10n-spain/ para que puedas crear y r
 facturas simplificadas desde la pantalla de Facturacion/Contabilidad (Account.move) y que se envien
 automaticamente a los servidores de TBAI.
 
-* Crea un Diario de contabilidad (account.journal) para facturas simplificadas, de esta manera
-tendran su propia secuencia y control. El diario para facturas simplificadas puede configurarse en 
-Configuracion > Ajustes generales > empresas > Empresa > Pestaña TicketBAI.
+* Crea un Diario de contabilidad (account.journal) para facturas simplificadas, de esta manera tendran su propia secuencia y control. El diario para facturas simplificadas puede configurarse en Configuracion > Ajustes generales > empresas > Empresa > Pestaña TicketBAI.
 
-* Controla que el importe de la factura simplificada no sea superior al limite legal.
-Por defecto son 3000€. El limite es configurable en Configuracion > Ajustes generales > empresas 
-> Empresa > Pestaña TicketBAI.
+* Controla que el importe de la factura simplificada no sea superior al limite legal. Por defecto son 3000€. El limite es configurable en Configuracion > Ajustes generales > empresas > Empresa > Pestaña TicketBAI.
 
 **Table of contents**
 
