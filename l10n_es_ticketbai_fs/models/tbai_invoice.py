@@ -13,8 +13,16 @@ class SiNoType(tbai_utils.EnumValues):
 
 ItuLog = itu_log.ItuLog()
 
+from odoo.addons.l10n_es_ticketbai_api.models.ticketbai_invoice import (
+    RefundCode,
+    RefundType,
+    SiNoType,
+    TicketBaiInvoiceState,
+)
+
 class TbaiInvoiceFS(models.Model):
     _inherit = 'tbai.invoice'
+    refund_code = fields.Selection(selection_add=[(RefundCode.R5.value, 'Factura rectificativa simplificada'),],)
 
     @api.constrains("simplified_invoice")
     def _check_simplified_invoiceFS(self):
