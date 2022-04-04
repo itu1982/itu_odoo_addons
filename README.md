@@ -2,6 +2,10 @@
 Itu's Odoo Addons 
 <!-- /!\ do not modify above this line -->
 
+Nota:
+----------------
+Estoy aprendiendo a usar/Programar en Odoo y ire publicando aqui los modulos y configuracion que vaya realizando. De esta manera cualquiera que quiera o necesite podra utilizarlos bajo su responsabilidad.
+
 
 Available addons
 ----------------
@@ -16,6 +20,8 @@ addon | version | maintainers | summary
 <!-- prettier-ignore-end -->
 
 ## Licenses
+
+Permito el uso libre de estos Addons/Programas aunque no me hago responsable del uso que se le den o de los problemas y errores que puedan derivar de su uso. 
 
 This repository is licensed under [AGPL-3.0](LICENSE).
 
