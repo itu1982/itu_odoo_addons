@@ -4,7 +4,7 @@ Itu's Odoo Addons
 
 Nota:
 ----------------
-Estoy aprendiendo a Programar y usar Odoo e ire publicando aqui los modulos y configuracion que vaya realizando. De esta manera cualquiera que quiera o necesite podra utilizarlos bajo su responsabilidad.
+Estoy aprendiendo a Programar y usar Odoo e ire publicando aquí los módulos y configuración que vaya realizando. De esta manera cualquiera que quiera o necesite podrá utilizarlos bajo su responsabilidad. 
 
 
 Available addons
