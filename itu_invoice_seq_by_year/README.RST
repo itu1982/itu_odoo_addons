@@ -2,10 +2,10 @@
 ITU INVOICE SEQUENCE BY YEAR
 =============================
 
-Módulo que adapta la secuencia a Codigo/Año/Numero Factura:
+Módulo que adapta la secuencia a código/Año/Numero Factura:
 
 * Crea un checkbox en los Diarios de contabilidad (account.journal) para activar
-  o desactivar la secucia usando solo el año. 
+  o desactivar la secuencia usando solo el año. 
 
 **Table of contents**
 
@@ -21,13 +21,13 @@ Configuration
 =============
 
 Una vez instalado, ir a la configuración del Diario (Journal) y activar
-el checkbox "Secuencias por año" de la configuración. Los nuevos Diarios que se creen
+el checkbox "Secuencias por año" de la configuración. Los nuevos diarios que se creen
 tendrán esta opción activada por defecto. 
 
 Usage
 =====
 
-Cuenta toca Crear o Regenerar una secuencia en vez de comenzar con CODIGO / AÑO / MES / Nº FACTURA
+Al Crear o Regenerar una secuencia en vez de comenzar con CODIGO / AÑO / MES / Nº FACTURA
 se crea uno CODIGO / AÑO / Nº FACTURA. 
 
 Nota: Al crear una entrada en un díario la secuencia se coge de la ultima entrada, por lo tanto
