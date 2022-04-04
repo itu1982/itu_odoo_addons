@@ -33,7 +33,7 @@ Configuration
 
 * El diario para facturas simplificadas puede configurarse en Configuración > Ajustes generales > empresas > Empresa > Pestaña TicketBAI.
 
-* El limite para las facturas simplificadas puede con figurable en Configuración > Ajustes generales > empresas > Empresa > Pestaña TicketBAI.
+* El limite para las facturas simplificadas puede configurarse en Configuración > Ajustes generales > empresas > Empresa > Pestaña TicketBAI.
 
 Usage
 =====
@@ -42,6 +42,8 @@ Al Crear una factura se comprueba si el cliente es anónimo y si tiene DNI/CIF. 
 
 Known issues / Roadmap
 ======================
+
+* El modulo da error al crear una factura simplificada si no tienes configurada la secuencia de facturas "normales" o si toca regenerarla, por ejemplo al cambiar de mes o año. Puedes solucionar este inconveniente simplemente generando una factura "normal". 
 
 
 Bug Tracker
