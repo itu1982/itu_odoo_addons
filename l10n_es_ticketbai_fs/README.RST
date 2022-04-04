@@ -4,11 +4,13 @@ l10n_es_ticketbai_fs
 
 Módulo que adapta los modulos de ticketbai (l10n_es_ticketbai_api y l10n_es_ticketbai) que 
 puedes encontrar en https://github.com/OCA/l10n-spain/ para que puedas crear y rectificar 
-facturas simplificadas desde la pantalla de Facturacion/Contabilidad (Account.move).
+facturas simplificadas desde la pantalla de Facturacion/Contabilidad (Account.move) y que se envien
+automaticamente a los servidores de TBAI.
 
 * Crea un Diario de contabilidad (account.journal) para facturas simplificadas, de esta manera
 tendran su propia secuencia y control. El diario para facturas simplificadas puede configurarse en 
-Configuracion > Ajustes generales > empresas > Empresa > Pestaña TicketBAI
+Configuracion > Ajustes generales > empresas > Empresa > Pestaña TicketBAI.
+
 * Controla que el importe de la factura simplificada no sea superior al limite legal.
 Por defecto son 3000€. El limite es configurable en Configuracion > Ajustes generales > empresas 
 > Empresa > Pestaña TicketBAI.
