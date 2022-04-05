@@ -10,6 +10,10 @@ Módulo que adapta los módulos de ticketbai (l10n_es_ticketbai_api y l10n_es_ti
 
 * Controla que el importe de la factura simplificada no sea superior al limite legal. Por defecto son 3000€. 
 
+* Se puede usar con ticketbai Deshabilitado o habilitado.
+
+* Adapta el archivo que se envia a ticketbai para indicar que es una factura simplificada o una rectificacion de una factura simplificada.
+
 **Table of contents**
 
 .. contents::
@@ -31,9 +35,9 @@ Configuration
     * Seleccionar como País (España) y Dejar el IVA/NIF/CIF en blanco.
     * Selecccionar como Posición fiscal "Régimen Nacional".
 
-* El diario para facturas simplificadas puede configurarse en Configuración > Ajustes generales > empresas > Empresa > Pestaña TicketBAI.
+* El diario para facturas simplificadas puede configurarse en Configuración > Ajustes generales > empresas > Empresa > Pestaña Factura simplificada.
 
-* El limite para las facturas simplificadas puede configurarse en Configuración > Ajustes generales > empresas > Empresa > Pestaña TicketBAI.
+* El limite para las facturas simplificadas puede configurarse en Configuración > Ajustes generales > empresas > Empresa > Pestaña Factura simplificada.
 
 Usage
 =====
