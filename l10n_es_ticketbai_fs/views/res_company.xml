@@ -10,7 +10,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//page[@name='ticketbai']" position="after">
                     <page name="tbai_fs" string="Factura Simplificada" modifiers="{}">
-                        <group name="ticketbai_company_config2" >
+                        <group name="gFactura simplificada" >
                              <field name="tbai_fs_limit"></field>
                              <field name="tbai_fs_journal_id"></field> 
                         </group> 
