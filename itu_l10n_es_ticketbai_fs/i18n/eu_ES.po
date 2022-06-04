@@ -1,0 +1,214 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* itu_l10n_es_ticketbai_fs
+#
+#  <>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-04 18:12+0000\n"
+"PO-Revision-Date: 2022-06-04 \n"
+"Last-Translator:  <>\n"
+"Language-Team:  <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "21% TAX INCLUDED"
+msgstr "21% BEZ BARNE"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_res_company__tbai_fs_journal_id
+msgid "Account journal for Simple invoices"
+msgstr "Factura erraztuentzako kontabilitate liburua"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Address:"
+msgstr "Helbidea:"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,help:itu_l10n_es_ticketbai_fs.field_account_bank_statement_line__tbai_refund_key
+#: model:ir.model.fields,help:itu_l10n_es_ticketbai_fs.field_account_move__tbai_refund_key
+#: model:ir.model.fields,help:itu_l10n_es_ticketbai_fs.field_account_payment__tbai_refund_key
+#: model:ir.model.fields,help:itu_l10n_es_ticketbai_fs.field_tbai_invoice__refund_code
+msgid ""
+"BOE-A-1992-28740. Ley 37/1992, de 28 de diciembre, del Impuesto sobre el "
+"Valor Añadido. Artículo 80. Modificación de la base imponible."
+msgstr ""
+"BOE-A-1992-28740. Ley 37/1992, de 28 de diciembre, del Impuesto sobre el "
+"Valor Añadido. Artículo 80. Modificación de la base imponible."
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model,name:itu_l10n_es_ticketbai_fs.model_res_company
+msgid "Companies"
+msgstr "Enpresak"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Customer:"
+msgstr "Bezeroak:"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Date:"
+msgstr "Data:"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Description"
+msgstr "Deskribapena"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Disc"
+msgstr "Desk."
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_journal__display_name
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_move__display_name
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_res_company__display_name
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice__display_name
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice_customer__display_name
+msgid "Display Name"
+msgstr "Erakusteko Izena"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.tbaifs_aeat_form
+msgid "Factura Simplificada"
+msgstr "Faktura erraztua"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_journal__id
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_move__id
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_res_company__id
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice__id
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice_customer__id
+msgid "ID"
+msgstr "ID"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Invoice Nº:"
+msgstr "Faktura Zk:"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice__refund_code
+msgid "Invoice Refund Reason Code"
+msgstr "Itzulketa Fakturaren arrazoi kodea"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.fs_filter_button_id
+msgid "Invoices"
+msgstr "Faktura"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model,name:itu_l10n_es_ticketbai_fs.model_account_journal
+msgid "Journal"
+msgstr "Liburua"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model,name:itu_l10n_es_ticketbai_fs.model_account_move
+msgid "Journal Entry"
+msgstr "Kontabilitate sarrera"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_journal____last_update
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_move____last_update
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_res_company____last_update
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice____last_update
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice_customer____last_update
+msgid "Last Modified on"
+msgstr "Azkeneko aldaketaren data"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Logo"
+msgstr "Logo"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Phone:"
+msgstr "Tel:"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Retail"
+msgstr "PVP"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_res_company__tbai_fs_limit
+msgid "Simple invoice limit"
+msgstr "Faktura erraztuaren muga"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.actions.report,name:itu_l10n_es_ticketbai_fs.report_factura_simplificada
+msgid "Simplified Invoice"
+msgstr "Faktura erraztua"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Simplified Invoice Nº:"
+msgstr "Faktura erraztuaren Zk:"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.fs_filter_button_id
+msgid "Simplified Invoices"
+msgstr "Faktura erraztua"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields.selection,name:itu_l10n_es_ticketbai_fs.selection__account_move__tbai_refund_key__r5
+msgid "Simplified Refund invoice"
+msgstr "Itzulketa Faktura erraztua"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields.selection,name:itu_l10n_es_ticketbai_fs.selection__tbai_invoice__refund_code__r5
+msgid "Simplified refund invoice"
+msgstr "Itzulketa Faktura erraztua"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_bank_statement_line__tbai_refund_key
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_move__tbai_refund_key
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_payment__tbai_refund_key
+msgid "Tbai Refund Key"
+msgstr "TBAI itzulketa kodea "
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Thank YOU"
+msgstr "¡Eskerrikasko!"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model,name:itu_l10n_es_ticketbai_fs.model_tbai_invoice_customer
+msgid "TicketBAI Invoice recipients"
+msgstr "TicketBAI Fakturaren hartzaileak"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model,name:itu_l10n_es_ticketbai_fs.model_tbai_invoice
+msgid "TicketBAI Invoices"
+msgstr "TicketBAI Fakturak"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Total:"
+msgstr "Guztira:"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Units"
+msgstr "Aleak"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
+msgid "Vat:"
+msgstr "NAN/IFK:"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: code:addons/itu_l10n_es_ticketbai_fs/models/tbai_invoice.py:0
+#, python-format
+msgid "a Simple Invoice %s can`t be more than %d"
+msgstr "Faktura erraztua %s ezin du %d gainditu"
