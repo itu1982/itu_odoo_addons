@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<data>
+	<template id="itu_original_invoice_data.clean" inherit_id="web.external_layout_clean">
+		<xpath expr="//span [@t-field='company.name']" position="replace"> 
+
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<span t-field="o.compania.name"/>
+			</t>
+			<t t-else="">
+				<span t-field="company.name"/>
+			</t>
+			
+		</xpath>
+
+		<xpath expr="//span [@t-field='company.vat']" position="replace"> 
+		
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<span t-field="o.compania.vat"/>
+			</t>
+			<t t-else="">
+				<span t-field="company.vat"/>
+			</t>
+			
+		</xpath>
+        
+        <xpath expr="//span [@t-field='company.phone']" position="replace"> 
+		
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<span class="o_force_ltr" t-field="o.compania.phone"/>
+			</t>
+			<t t-else="">
+				<span class="o_force_ltr" t-field="company.phone"/>
+			</t>
+			
+		</xpath>
+
+        <xpath expr="//span [@t-field='company.email']" position="replace"> 
+		
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<span t-field="o.compania.email"/>
+			</t>
+			<t t-else="">
+				<span t-field="company.email"/>
+			</t>
+			
+		</xpath>
+        
+        <xpath expr="//span [@t-field='company.website']" position="replace"> 
+		
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<span t-field="o.compania.website"/>
+			</t>
+			<t t-else="">
+				<span t-field="company.website"/>
+			</t>
+			
+		</xpath>
+			
+		<xpath expr="//span [@t-field='company.partner_id']" position="replace"> 
+
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<span t-field="o.compania.street"/> <br />
+				<span t-field="o.compania.zip"/>, <span t-field="o.compania.city"/> <br />
+				<span t-field="o.compania.state"/>, <span t-field="o.compania.country"/>
+			</t>
+			<t t-else="">
+                <span class="company_address" t-field="company.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;], &quot;no_marker&quot;: true}"/>
+			</t>
+			
+		</xpath>
+		
+	</template>    
+</data>
