@@ -7,6 +7,7 @@
     "website": "",
     "author": "Gorka Iturralde",
     "license": "AGPL-3",
+    "support": "itusoftware@gmail.com",
     "depends": [
         'account',
         'point_of_sale',
