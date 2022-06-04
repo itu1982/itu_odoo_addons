@@ -1,0 +1,237 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* itu_original_invoice_data
+#
+#  <>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-02 19:21+0000\n"
+"PO-Revision-Date: 2022-06-02 \n"
+"Last-Translator:  <>\n"
+"Language-Team:  <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: itu_original_invoice_data
+#: model_terms:ir.ui.view,arch_db:itu_original_invoice_data.background
+msgid ""
+"<i class=\"fa fa-at\" role=\"img\" aria-label=\"Email\" title=\"Email\"/>"
+msgstr ""
+"<i class=\"fa fa-at\" role=\"img\" aria-label=\"Email\" title=\"Email\"/>"
+
+#. module: itu_original_invoice_data
+#: model_terms:ir.ui.view,arch_db:itu_original_invoice_data.background
+msgid ""
+"<i class=\"fa fa-building-o\" role=\"img\" aria-label=\"Fiscal number\"/>"
+msgstr ""
+"<i class=\"fa fa-building-o\" role=\"img\" aria-label=\"Identificacion fiscal"
+"\"/>"
+
+#. module: itu_original_invoice_data
+#: model_terms:ir.ui.view,arch_db:itu_original_invoice_data.background
+msgid ""
+"<i class=\"fa fa-globe\" role=\"img\" aria-label=\"Website\" title=\"Website"
+"\"/>"
+msgstr ""
+"<i class=\"fa fa-globe\" role=\"img\" aria-label=\"Website\" title=\"Website"
+"\"/>"
+
+#. module: itu_original_invoice_data
+#: model_terms:ir.ui.view,arch_db:itu_original_invoice_data.background
+msgid ""
+"<i class=\"fa fa-phone\" role=\"img\" aria-label=\"Phone\" title=\"Phone\"/>"
+msgstr ""
+"<i class=\"fa fa-phone\" role=\"img\" aria-label=\"Phone\" title=\"Teléfono"
+"\"/>"
+
+#. module: itu_original_invoice_data
+#: model_terms:ir.ui.view,arch_db:itu_original_invoice_data.invoice_document
+msgid "<span> Simplified </span>"
+msgstr "<span>Simplificada</span>"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__city
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__city
+msgid "City"
+msgstr "Ciudad"
+
+#. module: itu_original_invoice_data
+#: model:ir.model,name:itu_original_invoice_data.model_res_company
+msgid "Companies"
+msgstr "Compañias"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_bank_statement_line__compania
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_move__compania
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_payment__compania
+msgid "Company:"
+msgstr "Compañia:"
+
+#. module: itu_original_invoice_data
+#: model:ir.model,name:itu_original_invoice_data.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__country
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__country
+msgid "Country"
+msgstr "Provincia"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__create_uid
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__create_uid
+msgid "Created by"
+msgstr "Creada por"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__create_date
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__create_date
+msgid "Created on"
+msgstr "Creada en"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_bank_statement_line__cliente
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_move__cliente
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_payment__cliente
+msgid "Customer:"
+msgstr "Cliente"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_move__display_name
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__display_name
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__display_name
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_res_company__display_name
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__email
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__email
+msgid "Email"
+msgstr "Email"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_move__id
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__id
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__id
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_res_company__id
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: itu_original_invoice_data
+#: model:ir.model,name:itu_original_invoice_data.model_itu_invoice_company
+msgid "Invoice Company data"
+msgstr "Datos de la compañia "
+
+#. module: itu_original_invoice_data
+#: model:ir.model,name:itu_original_invoice_data.model_itu_invoice_partner
+msgid "Invoice Partner data"
+msgstr "Datos del cliente"
+
+#. module: itu_original_invoice_data
+#: model_terms:ir.ui.view,arch_db:itu_original_invoice_data.itu_data_change_alert
+msgid ""
+"Invoice original data was change after invoice creation, reprint invoice to "
+"check original information"
+msgstr ""
+"Los datos de la factura original han sido modificados, reimprima la factura "
+"para ver los datos originales"
+
+#. module: itu_original_invoice_data
+#: model:ir.model,name:itu_original_invoice_data.model_account_move
+msgid "Journal Entry"
+msgstr "Entrada en Libro contable"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_move____last_update
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company____last_update
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner____last_update
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_res_company____last_update
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificación"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__write_uid
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualización"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__write_date
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__name
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__name
+msgid "Name: "
+msgstr "Nombre:"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_bank_statement_line__data_change_message
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_move__data_change_message
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_account_payment__data_change_message
+msgid "Parted changed"
+msgstr "Parted modificado"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__partner_name
+msgid "Partner Name"
+msgstr "Cliente modificado"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__phone
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__state
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__state
+msgid "State"
+msgstr "Estado"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__street
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__street
+msgid "Street"
+msgstr "Dirección"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__street2
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__street2
+msgid "Street2"
+msgstr "Dirección2"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__vat
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__vat
+msgid "Tax ID"
+msgstr "DNI/CIF"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,help:itu_original_invoice_data.field_itu_invoice_company__vat
+#: model:ir.model.fields,help:itu_original_invoice_data.field_itu_invoice_partner__vat
+msgid ""
+"The Tax Identification Number. Complete it if the contact is subjected to "
+"government taxes. Used in some legal statements."
+msgstr ""
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__website
+msgid "Website"
+msgstr "Web"
+
+#. module: itu_original_invoice_data
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_company__zip
+#: model:ir.model.fields,field_description:itu_original_invoice_data.field_itu_invoice_partner__zip
+msgid "Zip"
+msgstr "Codigo Postal"
