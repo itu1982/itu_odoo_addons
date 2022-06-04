@@ -20,7 +20,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_journal__display_name
 #: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_move__display_name
 msgid "Display Name"
-msgstr "Mostrar nombre"
+msgstr "Azaltzeko Izena"
 
 #. module: itu_invoice_seq_by_year
 #: model:ir.model.fields,help:itu_invoice_seq_by_year.field_account_journal__journal_by_year
@@ -28,8 +28,8 @@ msgid ""
 "Enable Invoice sequence only by Code and Year. Only Works for new sequences. "
 "e.g. Fact/2022/0001"
 msgstr ""
-"Activa la secuencia de facturas usando solo el Codigo y Año. Solo funciona "
-"con nuevas secuencias. e.j.  Fact/2022/0001"
+"Kodea eta urtea bakarrik erabiltzen duen sekuentzia.aktibatzen du. "
+"Sekuentzia berriekin funtzionatzen du soilik. "
 
 #. module: itu_invoice_seq_by_year
 #: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_journal__id
@@ -40,20 +40,20 @@ msgstr "ID"
 #. module: itu_invoice_seq_by_year
 #: model:ir.model,name:itu_invoice_seq_by_year.model_account_journal
 msgid "Journal"
-msgstr "Diario"
+msgstr "Liburua"
 
 #. module: itu_invoice_seq_by_year
 #: model:ir.model,name:itu_invoice_seq_by_year.model_account_move
 msgid "Journal Entry"
-msgstr "Asiento contable"
+msgstr "Kontabilitate idazpena"
 
 #. module: itu_invoice_seq_by_year
 #: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_journal____last_update
 #: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_move____last_update
 msgid "Last Modified on"
-msgstr "Última modificación el"
+msgstr "Azkeneko aldaketaren data"
 
 #. module: itu_invoice_seq_by_year
 #: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_journal__journal_by_year
 msgid "Sequences by year"
-msgstr "Secuencias por Año"
+msgstr "Urteko Sekuentziak"
