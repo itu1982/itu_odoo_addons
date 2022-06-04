@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_factura_simplificada" model="ir.actions.report">
+        <field name="name">Simplified Invoice</field>
+        <field name="model">account.move</field>
+        <field name="report_type">qweb-pdf</field> 
+        <!-- <field name="report_type">qweb-html</field>  -->
+        <field name="report_name">itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template</field>
+        <field name="report_file">itu_l10n_es_ticketbai_fs.ReceiptOrder2</field>
+        <field name="binding_model_id" ref="model_account_move"/>
+        <field name="binding_type">report</field>
+		<field name="paperformat_id" search="[('name', '=', 'Itu Ticket')]" ></field>
+		<!-- <field name="paperformat_id" ref="module_name.paperformat_id"/> -->
+    </record>
+</odoo>

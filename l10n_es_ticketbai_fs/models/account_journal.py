@@ -9,7 +9,7 @@ import logging, random
 
 ItuLog = itu_log.ItuLog()
 
-class ItuJournalSeqByYear(models.Model):
+class ItuFSJournal(models.Model):
     _inherit = 'account.journal'
     
     @api.model
@@ -34,5 +34,10 @@ class ItuJournalSeqByYear(models.Model):
                     }
                     JournalNew = self.create (record)
                     Empresa.tbai_fs_journal_id = JournalNew
+                    Empresa.tbai_fs_limit = 3000
+                
+                else:
+                    Journal = self.env['account.journal'].search([('name','=', 'Facturas Simplificadas de Clientes (' + Empresa.name + ')')], limit=1, order="id desc")
+                    Empresa.tbai_fs_journal_id = Journal.id
                     Empresa.tbai_fs_limit = 3000
                    
