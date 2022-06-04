@@ -2,7 +2,7 @@
 {
     'name' : 'Sequence by Year - Secuencias por Año',
     "summary": "Permite configurar las secuencias como FACT / AÑO / Numero, sin que aparecezca el mes..",
-    "version": "14.0.0.0.2",
+    "version": "14.0.0.0.3",
     "category": "Accounting & Finance",
     "website": "",
     "author": "Gorka Iturralde",
