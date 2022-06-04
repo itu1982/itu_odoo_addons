@@ -15,6 +15,7 @@ addon | version | maintainers | summary
 [itu_log](itu_log/)| 14.0.0.0.2 | [itu1982] | Permite escribir en los log.
 [itu_l10n_es_ticketbai_fs](itu_l10n_es_ticketbai_fs/) | 14.0.0.0.6 |  [itu1982] | Agrega la posibilidad de crear facturas simplificadas desde facturacion/contabilidad.
 [itu_tbai_status](itu_tbai_status/) | 14.0.0.0.1 |  [itu1982] | Muestra una columna con el estado de TBAI en el listado de facturas.
+[itu_original_invoice_data](itu_original_invoice_data/) | 14.0.0.0.1 |  [itu1982] | Guarda los datos de Cliente y Empresa a la hora de confirmar facturas y facturas simplificadas de esta manera no tendremos problemas a la hora de reimprimilas.
 
 [//]: # (end addons)
 
