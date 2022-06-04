@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+		
+		<record id="itu_tbai_status_view2" model="ir.ui.view">
+            <field name="name">ItuTbaiStatus</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_invoice_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_state']" position="after">
+                    <field name="tbai_state" ></field>
+                </xpath>
+            </field>
+        </record>
+			
+		<record id="itu_tbai_general_status_view2" model="ir.ui.view">
+            <field name="name">ItuTbaiStatus</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_invoice_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_state']" position="after">
+                    <field name="tbai_general_state" widget="badge" decoration-success="tbai_general_state == 'sent'" decoration-danger="tbai_general_state == 'error' or tbai_general_state == 'cancel'" decoration-warning="tbai_general_state == 'Warning'" decoration-info="tbai_general_state == 'pending'" decoration-muted="tbai_general_state == 'draft'"></field>
+                </xpath>
+            </field>
+        </record>
+		
+	</data>
+		
+
+</odoo>
