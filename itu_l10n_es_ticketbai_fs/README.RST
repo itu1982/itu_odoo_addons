@@ -1,5 +1,5 @@
 =============================
-l10n_es_ticketbai_fs
+itu_l10n_es_ticketbai_fs
 =============================
 
 Módulo que adapta los módulos de ticketbai (l10n_es_ticketbai_api y l10n_es_ticketbai) que puedes encontrar en https://github.com/OCA/l10n-spain/ para que puedas crear y rectificar facturas simplificadas desde la pantalla de Facturación/Contabilidad (Account.move) y que se envíen automaticamente a los servidores de TBAI.
