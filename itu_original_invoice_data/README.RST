@@ -2,7 +2,7 @@
 ITU ORIGINAL INVOICE DATA
 =============================
 
-Guarda los datos de Cliente y Empresa a la hora de confirmar facturas y facturas simplificadas
+Guarda los datos de Cliente y Empresa a la hora de confirmar las facturas 
 de esta manera no tendremos problemas a la hora de reimprimilas. 
 
 Funciona con los Diseños basicos:
