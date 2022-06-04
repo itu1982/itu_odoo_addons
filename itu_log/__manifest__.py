@@ -7,6 +7,7 @@
     "website": "https://github.com/itu1982/itu_odoo_addons",
     "author": "Gorka Iturralde",
     "license": "AGPL-3",
+    "support": "itusoftware@gmail.com",
     "depends": [],
     'data': [
         'security/ir.model.access.csv',
