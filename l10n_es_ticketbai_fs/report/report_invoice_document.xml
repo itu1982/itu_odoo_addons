@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<data>
+	<template id="itu_original_invoice_data.invoice_document" inherit_id="account.report_invoice_document">
+
+		<xpath expr="//span[@t-field='o.name']" position="replace">
+			<t t-if="o.partner_id.aeat_anonymous_cash_customer">
+				<span> Simplified </span>
+				<span t-if="o.name != '/'" t-field="o.name"/>
+			</t>
+			<t t-else="">
+				<span t-if="o.name != '/'" t-field="o.name"/>
+			</t>
+		</xpath>
+	</template>    
+</data>

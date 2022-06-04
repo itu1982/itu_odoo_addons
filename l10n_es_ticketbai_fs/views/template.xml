@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+ <data>      
+     <template id="assets_common_fs" name="itu_l10n_es_ticketbai_fs assets" inherit_id="report.minimal_layout">
+            <xpath expr="." position="inside">     
+                 <link rel="stylesheet" href="/itu_l10n_es_ticketbai_fs/static/src/css/factura_simplificada.css"/>
+               <!--   <script type="text/javascript" src="/itu_repair/static/src/js/itu_repair_aparato_wizard.js"  /> 
+               l10n_es_ticketbai_fs.factura_simplificada_template web.report_assets_common
+               -->
+            </xpath>            
+    </template>  
+ </data> 
+</odoo>

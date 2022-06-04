@@ -22,7 +22,7 @@ from odoo.addons.l10n_es_ticketbai_api.models.ticketbai_invoice import (
 
 class TbaiInvoiceFS(models.Model):
     _inherit = 'tbai.invoice'
-    refund_code = fields.Selection(selection_add=[(RefundCode.R5.value, 'Factura rectificativa simplificada'),],)
+    refund_code = fields.Selection(selection_add=[(RefundCode.R5.value, 'Simplified refund invoice'),],)
 
     @api.constrains("simplified_invoice")
     def _check_simplified_invoiceFS(self):
