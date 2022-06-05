@@ -22,12 +22,12 @@ Módulo que adapta los módulos de ticketbai (l10n_es_ticketbai_api y l10n_es_ti
 Installation
 ============
 
-*Este módulo requiere de los módulos:
-    *account
-    *itu_log
-    *l10n_es_ticketbai
-    *itu_original_invoice_data
-    *l10n_es_ticketbai_api.
+* Este módulo requiere de los módulos:
+    * account
+    * itu_log
+    * l10n_es_ticketbai
+    * itu_original_invoice_data
+    * l10n_es_ticketbai_api.
 
 Configuration
 =============
