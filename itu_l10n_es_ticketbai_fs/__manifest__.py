@@ -10,7 +10,6 @@
     "support": "itusoftware@gmail.com",
     "depends": [
         'account',
-        'point_of_sale',
         'l10n_es_ticketbai',
         'l10n_es_ticketbai_api',
         'itu_log',
