@@ -22,6 +22,7 @@
         'report/external_layout_boxed.xml',
         'report/external_layout_clean.xml',        
     ],
+    'images': ['static/description/banner.png'],
     'installable': True,
     'auto_install': False,
     'application': False,
