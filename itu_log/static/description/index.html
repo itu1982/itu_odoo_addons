@@ -1,0 +1,89 @@
+<style type="text/css">
+.FondoTitulo {
+	background-image: url(ItuSoftware3Fondo.png);
+	text-align: center;
+	vertical-align: middle;
+}
+</style>
+<div class="container" style="padding: 1rem !important; margin-bottom: 1.5rem !important;">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between"
+            style="border-bottom: 1px solid #d5d5d5;">
+            <div class="FondoTitulo"><img src="ItuSoftware3Hori.png" width="512" height="150" /></div>
+      </div>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="container oe_container" style="padding: 3em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row">
+      <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <h1 class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;">
+                Odoo 14 ITU LOG            </h1>
+            <p class="lead text-center" style="color: #102e42;">Módulo que permite enviar mensajes al archivo log, siempre y cuando estemos  en modo Debug.            </p>
+            <hr style="background-color: #0984e3; border: 2px solid #0984e3; width: 100px;" ; />
+            <p class="lead text-center" style="color: #102e42;">Module that allows sending messages to the log file, as long as we are in Debug mode.</p>
+            <hr style="background-color: #0984e3; border: 2px solid #0984e3; width: 100px;" ;>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Uso:        </h5>
+        <p dir="auto">Importando el modulo de la siguiente manera:</p>
+        <p dir="auto"><em>from odoo.addons.itu_log.models import itu_log  </em></p>
+        <p dir="auto"><em>ItuLog = itu_log.ItuLog()</em></p>
+        <p dir="auto">Nos permite enviar mensajes al archivo log configurado en odoo  usando el comando:</p>
+        <p dir="auto"><em>ItuLog.DebugText(&quot; MENSAJE &quot;)</em></p>
+        <p dir="auto">Antes de enviarse el mensaje comprueba que odoo este en modo debug.        </p>
+        <hr style="background-color: #0984e3; border: 2px solid #0984e3; width: 50px;" ; />
+        <p><strong>Usage:</strong></p>
+        <p dir="auto">For import the module use these commands:</p>
+        <p dir="auto"><em>from odoo.addons.itu_log.models import itu_log </em></p>
+        <p dir="auto"><em>ItuLog = itu_log.ItuLog()</em></p>
+        <p dir="auto">Then you can send mensaje to log usin this command:</p>
+        <p dir="auto"><em>ItuLog.DebugText(&quot; MENSAGE &quot;)</em></p>
+        <p dir="auto">Before send a mensaje to log, module checks  we are in debug mode or not.</p>
+        <p>&nbsp;</p>
+    </div>
+  </div>
+</section>
+<!-- END OF HERO -->
+
+<!-- FOOTER -->
+<!-- Footer Section -->
+<section class="container" style="margin: 5rem auto 2rem;">
+    <div class="row" style="max-width:1540px;">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Need Help?</h5>
+            <hr style="background-color: #0984e3; border: 2px solid #0984e3; width: 50px;" ;>
+        </div>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="row d-flex justify-content-center align-items-center"
+        style="max-width:1540px; margin: 0 auto 2rem auto;">
+
+        <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <a href="mailto:odoo@cybrosys.com" target="_blank" class="btn btn-block mb-2 deep_hover"
+                        style="text-decoration: none;  background-color: #4d4d4d; color: #FFF;  border-radius: 4px;"><i
+                            class="fa fa-envelope mr-2"></i>itusoftware@gmail.com</a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="https://api.whatsapp.com/send?phone=918606827707" target="_blank"
+                        class="btn btn-block mb-2 deep_hover"
+                        style="text-decoration: none;  background-color: #25D366; color: #FFF;  border-radius: 4px;"><i
+                            class="fa fa-whatsapp mr-2"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End of Contact Cards -->
+</section>
+<!-- Footer -->
+<section class="oe_container" style="padding: 2rem 3rem 1rem;"></section>
+<!-- END OF FOOTER -->
