@@ -2,7 +2,8 @@
 ITU TBAI STATUS
 =============================
 
-Muestra una columna con el estado de TBAI en el listado de facturas. Contiene los siguiente estados
+Muestra una columna con el estado de TBAI en el listado de facturas.
+
 
 **Table of contents**
 
@@ -22,9 +23,21 @@ Una vez instalado, aparecera una columna nueva en la lista de facturas.
 Usage
 =====
 
-Funciona automaticamente con las facturas nuevas. 
+Funciona automaticamente con las facturas nuevas.  
 
-Nota: Marcando la factura "Para revisar" dentro de la factura > "otra informacion" se recalcula el estado. 
+Contiene los siguientes estados:
+
+- Borrador: La factura aun no ha sido confirmada y por tanto no se ha enviado. 
+
+- Pendiente: La factura esta en cola para ser enviada.
+
+- Enviada: Enviada y recibida correctamente
+
+- Atencion: Ha habido algun contratiempo al enviar la factura, es necesario revisar los mensajes recibidos desde TBAI.
+
+- Error: Se ha producido un error grave al enviar la factura o a sido cancelada.
+
+Nota: Marcando la factura "Para revisar" dentro de la factura > "otra informacion" se recalcula el estado.
 
 Known issues / Roadmap
 ======================
