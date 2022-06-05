@@ -16,6 +16,7 @@
         'security/ir.model.access.csv',
         'views/account_journal.xml',
     ],
+    'images': ['static/description/banner.gif'],
     'installable': True,
     'auto_install': False,
     'application': False,
