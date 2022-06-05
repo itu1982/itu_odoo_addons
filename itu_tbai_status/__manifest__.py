@@ -18,7 +18,8 @@
         'security/ir.model.access.csv',
         'views/account_move.xml',
     ],
+    'images': ['static/description/banner.gif'],
     'installable': True,
-    'auto_install': False,
+    'auto_install': True,
     'application': False,
 }
