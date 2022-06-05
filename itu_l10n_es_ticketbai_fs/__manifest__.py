@@ -26,7 +26,7 @@
         'report/ReceiptOrder.xml',
         'report/report_invoice_document.xml',
     ],
-    'images': ['static/description/banner.png'],
+    'images': ['static/description/banner.gif'],
     'installable': True,
     'auto_install': False,
     'application': False,
