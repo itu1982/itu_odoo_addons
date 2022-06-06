@@ -1,6 +1,7 @@
 =============================
 ITU INVOICE SEQUENCE BY YEAR
 =============================
+M&#243;dulo que adapta la secuencia a c&#243;digo/A&#241;o/Numero Factura:
 
 Módulo que adapta la secuencia a código/Año/Numero Factura:
 
