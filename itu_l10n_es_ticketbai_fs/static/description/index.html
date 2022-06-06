@@ -1,130 +1,106 @@
-<style type="text/css">
-.FondoTitulo {
-	background-image: url(ItuSoftware3Fondo.png);
-	text-align: center;
-	vertical-align: middle;
-}
-</style>
-<div class="container" style="padding: 1rem !important; margin-bottom: 1.5rem !important;">
-    <div class="row" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-        <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between"
-            style="border-bottom: 1px solid #d5d5d5;">
-            <div class="FondoTitulo"><img src="ItuSoftware3Hori.png" width="512" height="150" /></div>
-      </div>
-    </div>
-</div>
-<div  style="border: 3px solid #00aef0; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
-
 <!-- HERO -->
+<!-- ENGLISH -->				
 <section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
     <div class="row">
       <div class="col-lg-12 d-flex flex-column justify-content-center">
-            <h1 class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;">
-                Odoo 14 ITU TicketBaiFS</h1>
-            <p dir="auto">Modulo que adapta los modulos de ticketbai (l10n_es_ticketbai_api y l10n_es_ticketbai) que puedes encontrar en <a href="https://github.com/OCA/l10n-spain/">https://github.com/OCA/l10n-spain/</a> para que puedas crear y rectificar facturas simplificadas desde la   pantalla de Facturacion/Contabilidad (Account.move) y que se envien   automaticamente a los servidores de TBAI.</p>
-            <ul dir="auto">
-              <li>Si tenemos marcado al cliente como Anonimo (AEAT - Cliente anonimo) y   el cliente no tiene DNI o CIF creara una factura simplificada.</li>
-              <li>Crea un Diario de contabilidad (account.journal) para facturas   simplificadas, de esta manera tendran su propia secuencia y control.</li>
-              <li>Controla que el importe de la factura simplificada no sea superior al limite legal. Por defecto son 3000€.</li>
-              <li>Se puede usar con ticketbai Deshabilitado o habilitado.</li>
-              <li>Adapta el archivo que se envia a ticketbai para indicar que es una   factura simplificada o una rectificacion de una factura simplificada.</li>
-            </ul>
+            <h1 id="English" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;">
+                Itu TicketBAI FS</h1> 
+            <p class="lead text-center" style="color: #102e42;">Module that adapts the ticketbai modules (l10n_es_ticketbai_api and l10n_es_ticketbai) available at https://github.com/OCA/l10n-spain/ so that you can create and rectify simplified invoices.</p>
       </div>
     </div>
 </section>
 
-<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
 
 <section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
     <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalacion:</h5>
-        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Este modulo requiere de los modulos:</h5>
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalation:</h2>
+        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">That module requiere this extra modules:</h5>
         <ul>
           <li>account</li>
           <li>itu_log</li>
-          <li>l10n_es_ticketbai</li>
-          <li>itu_original_invoice_data</li>
-          <li>l10n_es_ticketbai_api.        </li>
+	  <li>l10n_es_ticketbai</li>
+	  <li>itu_original_invoice_data</li>
+          <li>l10n_es_ticketbai_api.</li>
         </ul>
     </div>
   </div>
 </section>
 
-<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
 
-<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">	
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
   <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Configuracion:</h5>
-        <ul dir="auto">
-          <li>Por defecto el modulo se configura con un Diario nuevo para facturas   simplificadas usando el código FS y con un limite para factura   simplificada de 3000€</li>
-          <li>Para configurar un cliente como anonimo:
-            <ul>
-              <li>Ir a Contactos &gt; Nombre_Contacto &gt; Pestana AEAT &gt;</li>
-              <li>Marcar al cliente como Anonimo (AEAT - Cliente anonimo)</li>
-              <li>Seleccionar como Pais (Espana) y Dejar el IVA/NIF/CIF en blanco.</li>
-              <li>Selecccionar como Posicion fiscal &quot;Regimen Nacional&quot;.</li>
-            </ul>
-          </li>
-          <li>El diario para facturas simplificadas puede configurarse en   Configuracion &gt; Ajustes generales &gt; empresas &gt; Empresa &gt;   Pestaña Factura simplificada.</li>
-          <li>El limite para las facturas simplificadas puede configurarse en   Configuracion &gt; Ajustes generales &gt; empresas &gt; Empresa &gt;   Pestana Factura simplificada.</li>
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Configuration:</h2>
+	<ul>
+          <li>By default the module is configured with a new Journal for simplified invoices using the FS code and with a limit for simplified invoice of 3000€.</li>
+	  <li>To configure a customer as anonymous:</li>
+          <ul>
+		  <li>Go to Contacts &gt; Contact_Name &gt; AEAT tab &gt;</li>
+		  <li>Mark the customer as Anonymous (AEAT - Anonymous Customer)</li>
+		  <li>Select as Country (Spain) and leave VAT/NIF/CIF blank.</li>
+		  <li>Select as Fiscal Position "National Regime".</li>
+	  </ul>
+	  <li>The journal for simplified invoices can be configured in Configuration &gt; General Settings &gt; Companies &gt; Company &gt; Simplified Invoice tab.</li>
+	  <li>The limit for simplified invoices can be configured in Configuration > General Settings > Companies > Company > Company > Simplified Invoice tab.</li>
         </ul>
     </div>
   </div>
 </section>
 
-<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
 
 <section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
-  <div class="row" style="max-width:1540px;">
+<div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Uso:        </h5>
-        <p dir="auto">Al Crear una factura se comprueba si el cliente es anonimo y si tiene   DNI/CIF. En ese caso se crea una factura simplificada en vez de una   normal.</p>
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Usage: </h2>
+          <p>Module that adapts the ticketbai modules (l10n_es_ticketbai_api and l10n_es_ticketbai) that you can find in https://github.com/OCA/l10n-spain/ so you can create and rectify simplified invoices from the Invoicing/Accounting screen (Account.move) and send them automatically to TBAI servers.</p>
+        <ul>
+          <li> If we have marked the client as Anonymous (AEAT - Anonymous Client) and the client does not have a DNI or CIF it will create a simplified invoice.</li>
+          <li>Create an accounting journal (account.journal) for simplified invoices, this way they will have their own sequence and control.</li>
+	  <li>Check that the amount of the simplified invoice does not exceed the legal limit. By default it is 3000€.</li>
+	  <li>It can be used with ticketbai Disabled or enabled.</li>
+          <li>Adapts the file that is sent to ticketbai to indicate that it is a simplified invoice or a rectification of a simplified invoice.</li>
+        </ul>
     </div>
   </div>
 </section>
 
-<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
 
 <section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
-  <div class="row" style="max-width:1540px;">
+<div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Known issues:        </h5>
-        <p dir="auto">El modulo da error al crear una factura simplificada si no tienes   configurada la secuencia de facturas &quot;normales&quot; o si toca regenerarla,   por ejemplo al cambiar de mes o ano. Puedes solucionar este   inconveniente simplemente generando una factura &quot;normal&quot;.</p>
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Known issues:        </h2>
+	<p>The module gives error when creating a simplified invoice if you have not configured the sequence of "normal" invoices or if you have to regenerate it, for example when changing month or year. You can solve this problem by simply generating a "normal" invoice.< /p>
     </div>
   </div>
 </section>
 
-<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
 
 <section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
   <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Imagenes:        </h5>
-        <p dir="auto"><img src="images/fs_1.png" width="948" height="608" /></p>
-        <p dir="auto"><img src="images/fs_2.png" width="948" height="711" /></p>
-        <p dir="auto">&nbsp;</p>
-        <p dir="auto"><img src="images/fs_4.png" width="601" height="658" /></p>
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Images:        </h2>
+        <p dir="auto"><a href="#Images">click here to view the pictures below</a></p>
     </div>
   </div>
 </section>
-<!-- END OF HERO -->
-
-<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
-
-<!-- FOOTER -->
-<!-- Footer Section -->
+				
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+				
 <section class="container" style="margin: 1rem auto 2rem;">
     <div class="row" style="max-width:1540px;">
         <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-            <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Need Help?</h5>
+            <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Need Help?</h2>
         </div>
     </div>
 
     <!-- Contact Cards -->
-    <div class="row d-flex justify-content-center align-items-center"
-        style="max-width:1540px; margin: auto auto 2rem auto;">
+    <div class="row d-flex justify-content-center align-items-center" style="max-width:1540px; margin: auto auto 2rem auto;">
 
         <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
 
@@ -138,9 +114,235 @@
         </div>
 
     </div>
-    <!-- End of Contact Cards -->
 </section>
+<!-- END OF ENGLISH -->
+
+<!-- SPANISH -->
+<div  style="border: 1px solid #00aef0; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+<p />					
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row">
+      <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <h1 id="Spanish" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;">
+                Odoo 14 ITU Sequence by YEAR</h1> 
+            <p class="lead text-center" style="color: #102e42;">M&#243;dulo que adapta la secuencia de Facturas a c&#243;digo/A&#241;o/Numero Factura:</p>
+      </div>
+    </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalaci&#243;n:</h2>
+        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Este m&#243;dulo requiere de los m&#243;dulos:</h5>
+        <ul>
+          <li>account</li>
+          <li>itu_log</li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Configuraci&#243;n:</h2>
+          <p>Crea un checkbox en los Diarios de contabilidad (account.journal) para activar o desactivar la secuencia usando solo el a&#241;o. </p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Uso: </h2>
+        <p dir="auto">Al Crear o Regenerar una secuencia en vez de comenzar con CODIGO / A&#209;O / MES / N&#186; FACTURA se crea uno CODIGO / A&#209;O / N&#186; FACTURA.</p>
+	<p dir="auto">Nota: Al crear una entrada en un diario la secuencia se coge de la &#250;ltima entrada, por lo tanto si el Diario ya ten&#237;a entradas usando la secuencia CODIGO / A&#209;O / MES / N.&#186; FACTURA no cambiara hasta que toque regenerarla, por ejemplo con el cambio de mes.</p>
+     	<p dir="auto">Esto se puede solucionar creando un diario contable nuevo</p>
+	</div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Problemas Conocidos: </h2> 
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Im&#225;genes:        </h2>
+        <p dir="auto"><a href="#Images">Click aqu&#237; para ver las im&#225;genes</a></p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+				
+<section class="container" style="margin: 1rem auto 2rem;">
+    <div class="row" style="max-width:1540px;">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">&#191;Necesitas Ayuda?</h2>
+        </div>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="row d-flex justify-content-center align-items-center" style="max-width:1540px; margin: auto auto 2rem auto;">
+
+        <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
+
+            <div class="row mt-4">
+                <div class="col-lg-6" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+                    <a href="mailto:itusoftware@gmail.com" target="_blank" class="btn btn-block mb-2 deep_hover"
+                        style="text-decoration: none;  background-color: #4d4d4d; color: #FFF;  border-radius: 4px;"><i
+                            class="fa fa-envelope mr-2"></i>itusoftware@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>				
+				
+				
+				
+<!-- END OF SPANISH -->	
+				
+<!-- BASQUE -->
+<div  style="border: 1px solid #00aef0; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+<p />					
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row">
+      <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <h1 id="Basque" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;">
+                Odoo 14 ITU Sequence by YEAR</h1> 
+            <p class="lead text-center" style="color: #102e42;">Fakturen sekuentzia Kodea/Urtea/Fact. Zenbakira moldatzen duen modulua </p>
+      </div>
+    </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalazioa:</h2>
+        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Modulu Honek beste hauek behar ditu:</h5>
+        <ul>
+          <li>account</li>
+          <li>itu_log</li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Ezarpenak:</h2>
+          <p>Sekuentzia aktibatu eta desaktibatzeko kontabilitate liburuaren barruan checkbox bat sortzen du.</p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Erabilpena: </h2>
+        <p dir="auto">Sekuentzia bat sortu edo berritzerakoan "kodea/urtea/hilabetea/Fact. Zk." erabili ordez "kodea/urtea/Fact. Zk." erabiltzen da</p>
+	<p dir="auto">Oharra: Faktura bar sortzerakoan azkeneko fakturaren sekuentzia hartzen da, beraz existitzen den sekuentzia ez da aldatuko berritu harte. Hau Kontabilitate berri bat sortuz konpondu daiteke.</p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Arazo ezagunak: </h2> 
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Argazkiak:        </h2>
+        <p dir="auto"><a href="#Images">Click hemen argazkiak ikusteko</a></p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+				
+<section class="container" style="margin: 1rem auto 2rem;">
+    <div class="row" style="max-width:1540px;">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Laguntza behar duzu?</h2>
+        </div>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="row d-flex justify-content-center align-items-center" style="max-width:1540px; margin: auto auto 2rem auto;">
+
+        <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
+
+            <div class="row mt-4">
+                <div class="col-lg-6" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+                    <a href="mailto:itusoftware@gmail.com" target="_blank" class="btn btn-block mb-2 deep_hover"
+                        style="text-decoration: none;  background-color: #4d4d4d; color: #FFF;  border-radius: 4px;"><i
+                            class="fa fa-envelope mr-2"></i>itusoftware@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>				
+				
+				
+				
+<!-- END OF BASQUE -->					
+				
+				
+<!-- END OF HERO -->
+
+<!-- FOOTER -->
+				
+<!-- Footer Section -->
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 id="Images" class="text-center" style="font-family: Montserrat, 'sans-serif';">Imagenes:        </h2>
+        <p dir="auto"><img src="images/fs_1.png" width="813" height="353" /></p>
+        <p dir="auto"><img src="images/fs_2.png" width="813" height="371" /></p>
+	<p dir="auto"><img src="images/fs_4.png" width="813" height="371" /></p>
+    </div>
+  </div>
+</section>				
+				
+				
 <!-- Footer -->
-<section class="oe_container" style="padding: 2rem 3rem 1rem;"></section>
-<div  style="border: 3px solid #00aef0; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
+<section class="oe_container" style="padding: 1rem 3rem 1rem;"></section>
+<div  style="border: 3px solid #00aef0; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
 <!-- END OF FOOTER -->
