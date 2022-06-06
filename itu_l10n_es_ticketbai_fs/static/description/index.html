@@ -36,7 +36,14 @@
       <div class="col-lg-12 d-flex flex-column justify-content-center">
             <h1 id="English" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;">
                 Itu TicketBAI FS</h1> 
-            <p class="lead text-center" style="color: #102e42;">Module that adapts the ticketbai modules (l10n_es_ticketbai_api and l10n_es_ticketbai) available at https://github.com/OCA/l10n-spain/ so that you can create and rectify simplified invoices.</p>
+		<p>Module that adapts the ticketbai modules (l10n_es_ticketbai_api and l10n_es_ticketbai) that you can find in https://github.com/OCA/l10n-spain/ so you can create and rectify simplified invoices from the Invoicing/Accounting screen (Account.move) and send them automatically to TBAI servers.</p>
+		<ul>
+		  <li> If we have marked the client as Anonymous (AEAT - Anonymous Client) and the client does not have a DNI or CIF it will create a simplified invoice.</li>
+		  <li>Create an accounting journal (account.journal) for simplified invoices, this way they will have their own sequence and control.</li>
+		  <li>Check that the amount of the simplified invoice does not exceed the legal limit. By default it is 3000&euro; .</li>
+		  <li>It can be used with ticketbai Disabled or enabled.</li>
+		  <li>Adapts the file that is sent to ticketbai to indicate that it is a simplified invoice or a rectification of a simplified invoice.</li>
+		</ul>
       </div>
     </div>
 </section>
@@ -87,15 +94,7 @@
 <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Usage: </h2>
-          <p>Module that adapts the ticketbai modules (l10n_es_ticketbai_api and l10n_es_ticketbai) that you can find in https://github.com/OCA/l10n-spain/ so you can create and rectify simplified invoices from the Invoicing/Accounting screen (Account.move) and send them automatically to TBAI servers.</p>
-        <ul>
-          <li> If we have marked the client as Anonymous (AEAT - Anonymous Client) and the client does not have a DNI or CIF it will create a simplified invoice.</li>
-          <li>Create an accounting journal (account.journal) for simplified invoices, this way they will have their own sequence and control.</li>
-	  <li>Check that the amount of the simplified invoice does not exceed the legal limit. By default it is 3000&euro; .</li>
-	  <li>It can be used with ticketbai Disabled or enabled.</li>
-          <li>Adapts the file that is sent to ticketbai to indicate that it is a simplified invoice or a rectification of a simplified invoice.</li>
-        </ul>
-    </div>
+          <p>When creating an invoice it is checked if the customer is anonymous and if he/she has a DNI/CIF. If the customer is anonymous and does not have a DNI, a simplified invoice is created instead of a normal one.</p>
   </div>
 </section>
 
