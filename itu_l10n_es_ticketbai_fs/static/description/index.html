@@ -154,9 +154,15 @@
 <section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
     <div class="row">
       <div class="col-lg-12 d-flex flex-column justify-content-center">
-            <h1 id="Spanish" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;">
-                Odoo 14 ITU Sequence by YEAR</h1> 
-            <p class="lead text-center" style="color: #102e42;">M&#243;dulo que adapta la secuencia de Facturas a c&#243;digo/A&#241;o/Numero Factura:</p>
+            <h1 id="Spanish" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> Itu TicketBAI FS </h1> 
+            <p>M&#243;dulo que adapta los m&#243;dulos de TicketBai (l10n_es_ticketbai_api y l10n_es_ticketbai) que puedes encontrar en https://github.com/OCA/l10n-spain/ para que puedas crear y rectificar facturas simplificadas desde la pantalla de Facturaci&#243;n/Contabilidad (Account.move) y que se env&#237;en autom&#225;ticamente a los servidores de TBAI.</p>
+		<ul>
+		  <li>Si tenemos marcado al cliente como An&#243;nimo (AEAT - Cliente an&#243;nimo) y el cliente no tiene DNI o CIF creara una factura simplificada.</li>
+		  <li>Crea un Diario de contabilidad (account.journal) para facturas simplificadas, de esta manera tendr&#225;n su propia secuencia y control.</li>
+		  <li>Controla que el importe de la factura simplificada no sea superior al limite legal. Por defecto son 3000€.</li>
+		  <li>Se puede usar con TicketBAI Deshabilitado o habilitado.</li>
+		  <li>Adapta el archivo que se env&#237;a a TicketBAI para indicar que es una factura simplificada o una rectificaci&#243;n de una factura simplificada.</li>
+		</ul>
       </div>
     </div>
 </section>
@@ -171,6 +177,9 @@
         <ul>
           <li>account</li>
           <li>itu_log</li>
+	  <li>l10n_es_ticketbai</li>
+	  <li>itu_original_invoice_data</li>
+          <li>l10n_es_ticketbai_api.</li>
         </ul>
     </div>
   </div>
@@ -182,7 +191,18 @@
   <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Configuraci&#243;n:</h2>
-          <p>Crea un checkbox en los Diarios de contabilidad (account.journal) para activar o desactivar la secuencia usando solo el a&#241;o. </p>
+       <ul>
+          <li>Por defecto el m&#243;dulo se configura con un Diario nuevo para facturas simplificadas usando el c&#243;digo FS y con un l&#237;mite para factura simplificada de 3000€&euro;.</li>
+	  <li>Para configurar un cliente como an&#243;nimo:</li>
+          <ul>
+		  <li>Ir a Contactos &gt; Nombre_Contacto &gt; Pesta&#241;a AEAT &gt;</li>
+		  <li>Marcar al cliente como An&#243;nimo (AEAT - Cliente an&#243;nimo)</li>
+		  <li>Seleccionar como Pa&#237;s (Espa&#241;a) y Dejar el IVA/NIF/CIF en blanco.</li>
+		  <li>Seleccionar como Posici&#243;n fiscal &quot;R&#233;gimen Nacional&quot;.</li>
+	  </ul>
+	  <li>El diario para facturas simplificadas puede configurarse en Configuraci&#243;n &gt; Ajustes generales &gt; empresas &gt; Empresa &gt; Pesta&#241;a Factura simplificada.</li>
+	  <li>El l&#237;mite para las facturas simplificadas puede configurarse en Configuraci&#243;n &gt; Ajustes generales &gt; empresas &gt; Empresa &gt; Pesta&#241;a Factura simplificada.</li>
+        </ul>
     </div>
   </div>
 </section>
@@ -193,9 +213,7 @@
 <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Uso: </h2>
-        <p dir="auto">Al Crear o Regenerar una secuencia en vez de comenzar con CODIGO / A&#209;O / MES / N&#186; FACTURA se crea uno CODIGO / A&#209;O / N&#186; FACTURA.</p>
-	<p dir="auto">Nota: Al crear una entrada en un diario la secuencia se coge de la &#250;ltima entrada, por lo tanto si el Diario ya ten&#237;a entradas usando la secuencia CODIGO / A&#209;O / MES / N.&#186; FACTURA no cambiara hasta que toque regenerarla, por ejemplo con el cambio de mes.</p>
-     	<p dir="auto">Esto se puede solucionar creando un diario contable nuevo</p>
+        <p dir="auto">Al crear una factura se comprueba si el cliente es an&#243;nimo y si tiene DNI/CIF. En caso de que este marcado como an&#243;nimo y no tenga DNI/CIF se crea una factura simplificada en vez de una normal.</p>
 	</div>
   </div>
 </section>
@@ -206,6 +224,7 @@
 <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Problemas Conocidos: </h2> 
+	<p> El m&#243;dulo da error al crear una factura simplificada si no tienes configurada la secuencia de facturas &quot;normales&quot; o si toca regenerarla, por ejemplo al cambiar de mes o a&#241;o. Puedes solucionar este inconveniente simplemente generando una factura &quot;normal&quot;. </p>
     </div>
   </div>
 </section>
