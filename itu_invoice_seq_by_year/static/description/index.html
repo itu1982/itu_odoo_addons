@@ -75,7 +75,8 @@
 <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Usage: </h2>
-        <p dir="auto">When creating an invoice it is checked if the customer is anonymous and if he has a DNI/CIF. In this case a simplified invoice is created instead of a normal one.</p>
+        <p dir="auto">When creating or regenerating a sequence, instead of starting with CODE/YEAR/MONTH/INVOICE NUMBER, a CODE/YEAR/INVOICE NUMBER is created.</p>
+	<p dir="auto">Note: When creating an entry in a journal the sequence is taken from the last entry, therefore if the journal already had entries using the sequence CODE / YEAR / MONTH / INVOICE NUMBER it will not change until you regenerate it, for example with the change of month. This can be solved by creating a new accounting journal.</p>
     </div>
   </div>
 </section>
@@ -176,7 +177,8 @@
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Uso: </h2>
         <p dir="auto">Al Crear o Regenerar una secuencia en vez de comenzar con CODIGO / A&#209;O / MES / N&#186; FACTURA se crea uno CODIGO / A&#209;O / N&#186; FACTURA.</p>
 	<p dir="auto">Nota: Al crear una entrada en un diario la secuencia se coge de la &#250;ltima entrada, por lo tanto si el Diario ya ten&#237;a entradas usando la secuencia CODIGO / A&#209;O / MES / N.&#186; FACTURA no cambiara hasta que toque regenerarla, por ejemplo con el cambio de mes.</p>
-    </div>
+     	<p dir="auto">Esto se puede solucionar creando un diario contable nuevo</p>
+	</div>
   </div>
 </section>
 
@@ -229,7 +231,110 @@
 				
 				
 				
-<!-- END OF SPANISH -->				
+<!-- END OF SPANISH -->	
+				
+<!-- BASQUE -->
+<div  style="border: 1px solid #00aef0; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+<p />					
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row">
+      <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <h1 id="Basque" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;">
+                Odoo 14 ITU Sequence by YEAR</h1> 
+            <p class="lead text-center" style="color: #102e42;">Fakturen sekuentzia Kodea/Urtea/Fact. Zenbakira moldatzen duen modulua </p>
+      </div>
+    </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalazioa:</h2>
+        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Modulu Honek beste hauek behar ditu:</h5>
+        <ul>
+          <li>account</li>
+          <li>itu_log</li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Ezarpenak:</h2>
+          <p>Sekuentzia aktibatu eta desaktibatzeko kontabilitate liburuaren barruan checkbox bat sortzen du.</p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Erabilpena: </h2>
+        <p dir="auto">Sekuentzia bat sortu edo berritzerakoan "kodea/urtea/hilabetea/Fact. Zk." erabili ordez "kodea/urtea/Fact. Zk." erabiltzen da</p>
+	<p dir="auto">Oharra: Faktura bar sortzerakoan azkeneko fakturaren sekuentzia hartzen da, beraz existitzen den sekuentzia ez da aldatuko berritu harte. Hau Kontabilitate berri bat sortuz konpondu daiteke.</p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Arazo ezagunak: </h2> 
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Argazkiak:        </h2>
+        <p dir="auto"><a href="#Images">Click hemen argazkiak ikusteko</a></p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+				
+<section class="container" style="margin: 1rem auto 2rem;">
+    <div class="row" style="max-width:1540px;">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Laguntza behar duzu?</h2>
+        </div>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="row d-flex justify-content-center align-items-center" style="max-width:1540px; margin: auto auto 2rem auto;">
+
+        <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
+
+            <div class="row mt-4">
+                <div class="col-lg-6" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+                    <a href="mailto:itusoftware@gmail.com" target="_blank" class="btn btn-block mb-2 deep_hover"
+                        style="text-decoration: none;  background-color: #4d4d4d; color: #FFF;  border-radius: 4px;"><i
+                            class="fa fa-envelope mr-2"></i>itusoftware@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>				
+				
+				
+				
+<!-- END OF BASQUE -->					
 				
 				
 <!-- END OF HERO -->
@@ -251,5 +356,4 @@
 <!-- Footer -->
 <section class="oe_container" style="padding: 1rem 3rem 1rem;"></section>
 <div  style="border: 3px solid #00aef0; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
-<h2 id="Basque">Basque Prueba </h2>
 <!-- END OF FOOTER -->
