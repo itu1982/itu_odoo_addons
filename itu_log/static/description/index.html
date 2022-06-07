@@ -1,10 +1,3 @@
-<style type="text/css">
-.FondoTitulo {
-	background-image: url(ItuSoftware3Fondo.png);
-	text-align: center;
-	vertical-align: middle;
-}
-</style>
 <div class="container" style="padding: 1rem !important; margin-bottom: 1.5rem !important;">
     <div class="row" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
         <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between"
@@ -14,57 +7,101 @@
     </div>
 </div>
 <div  style="border: 3px solid #00aef0; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
+<p />
+
+<div class="divTable" style="display: table; width: 50%; text-align: center; vertical-align: middle; margin-left: auto; margin-right: auto;">
+	<div class="divTableBody" style="display: table-row-group;">
+		<div class="divTableRow" style="width: 100%; text-align: center; vertical-align: middle; display: table-row;">
+			<div class="divTableCell" style="width: 100%; text-align: center; vertical-align: middle; display: table-cell; padding: 3px 10px;"><h4> Select language: </h4></div>
+		</div>
+	</div>
+</div>
+
+<div class="divTable" style="display: table; width: 35%; text-align: center; vertical-align: middle; margin-left: auto; margin-right: auto;">
+	<div class="divTableBody" style="display: table-row-group;">
+		<div class="divTableRow" style="display: table-row;">
+			<div class="divTableCell" style="width: 33%; text-align: center; vertical-align: middle; display: table-cell; padding: 3px 10px;"><a href="#Basque"><img alt="Basque" src="images/ikurrina.png" width=75" height="35"></a></div>
+			<div class="divTableCell" style="width: 33%; text-align: center; vertical-align: middle; display: table-cell; padding: 3px 10px;"><a href="#Spanish"><img alt="Basque" src="images/espana.png" width=75" height="35"></a></div>
+			<div class="divTableCell" style="text-align: center; vertical-align: middle; display: table-cell; padding: 3px 10px;"><a href="#English"><img alt="Basque" src="images/ingles.png" width=75" height="35"></a></div>
+		</div>
+	</div>
+</div>
+<div  style="border: 1px solid #00aef0; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+<p />	
 
 <!-- HERO -->
+<!-- ENGLISH -->				
 <section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
     <div class="row">
       <div class="col-lg-12 d-flex flex-column justify-content-center">
-            <h1 class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;">
-                Odoo 14 ITU LOG            </h1>
-            <p class="lead text-center" style="color: #102e42;">Modulo que permite enviar mensajes al archivo log, siempre y cuando estemos  en modo Debug.            </p>
-            <p class="lead text-center" style="color: #102e42;">Module that allows sending messages to the log file, as long as we are in Debug mode.</p>
+            <h1 id="English" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> ITU LOG </h1> 
+		<pModule that allows sending messages to the log file, as long as we are in Debug mode</p>
       </div>
     </div>
 </section>
-<div  style="border: 1px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
 
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
 
-<section class="container" style="margin: 1rem auto 2rem;">
-  <div class="row" style="max-width:1540px;">
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-        <h3 class="text-center" style="font-family: Montserrat, 'sans-serif';">Uso:        </h3>
-        <p dir="auto">Importando el modulo de la siguiente manera:</p>
-        <p dir="auto"><em>from odoo.addons.itu_log.models import itu_log  </em></p>
-        <p dir="auto"><em>ItuLog = itu_log.ItuLog()</em></p>
-        <p dir="auto">Nos permite enviar mensajes al archivo log configurado en odoo  usando el comando:</p>
-        <p dir="auto"><em>ItuLog.DebugText(&quot; MENSAJE &quot;)</em></p>
-        <p dir="auto">Antes de enviarse el mensaje comprueba que odoo este en modo debug.        </p>
-        <h3 class="text-center" style="font-family: Montserrat, 'sans-serif';">Usage:        </h3>
-        <p dir="auto">For import the module use these commands:</p>
-        <p dir="auto"><em>from odoo.addons.itu_log.models import itu_log </em></p>
-        <p dir="auto"><em>ItuLog = itu_log.ItuLog()</em></p>
-        <p dir="auto">Then you can send mensaje to log usin this command:</p>
-        <p dir="auto"><em>ItuLog.DebugText(&quot; MENSAGE &quot;)</em></p>
-        <p dir="auto">Before send a mensaje to log, module checks  we are in debug mode or not.</p>
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalation:</h2>
     </div>
   </div>
 </section>
 
-<div  style="border: 1px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
 
-<!-- END OF HERO -->
-<!-- FOOTER -->
-<!-- Footer Section -->
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Configuration:</h2>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Usage: </h2>
+	<ul>
+		  <li>For import the module use these commands:</li>
+		  <ul>
+			  <li>from odoo.addons.itu_log.models import itu_log</li>
+			  <li>ItuLog = itu_log.ItuLog()</li>
+		  </ul>
+		  <li>Then you can send mensaje to log usin this command:</li>
+		  <ul>
+			  <li>ItuLog.DebugText(" MENSAGE ")</li>
+		  </ul>
+	 	 <li>Before send a mensaje to log, module checks we are in debug mode or not.</li>
+        </ul>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Known issues:        </h2>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+				
 <section class="container" style="margin: 1rem auto 2rem;">
     <div class="row" style="max-width:1540px;">
         <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-            <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Need Help?</h5>
+            <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Need Help?</h2>
         </div>
     </div>
 
     <!-- Contact Cards -->
-    <div class="row d-flex justify-content-center align-items-center"
-        style="max-width:1540px; margin: auto auto 2rem auto;">
+    <div class="row d-flex justify-content-center align-items-center" style="max-width:1540px; margin: auto auto 2rem auto;">
 
         <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
 
@@ -78,10 +115,210 @@
         </div>
 
     </div>
-	
-    <!-- End of Contact Cards -->
 </section>
+<!-- END OF ENGLISH -->
+
+<!-- SPANISH -->
+				
+<div  style="border: 1px solid #00aef0; width:100%; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+<p />					
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row">
+      <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <h1 id="Spanish" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> ITU LOG </h1> 
+            <p>M&#243;dulo que permite enviar mensajes al archivo log, siempre y cuando estemos en modo Debug.</p>
+      </div>
+    </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalaci&#243;n:</h2>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Configuraci&#243;n:</h2>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Uso: </h2>
+	<ul>
+		  <li>Importando el m&#243;dulo de la siguiente manera:</li>
+		  <ul>
+			  <li>from odoo.addons.itu_log.models import itu_log</li>
+			  <li>ItuLog = itu_log.ItuLog()</li>
+		  </ul>
+		  <li>Nos permite enviar mensajes al archivo log configurado en odoo usando el comando:</li>
+		  <ul>
+			  <li>ItuLog.DebugText(" MENSAGE ")</li>
+		  </ul>
+	 	 <li>Antes de enviarse el mensaje comprueba que odoo este en modo Debug</li>
+        </ul>
+	</div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Problemas Conocidos: </h2> 
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+				
+<section class="container" style="margin: 1rem auto 2rem;">
+    <div class="row" style="max-width:1540px;">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">&#191;Necesitas Ayuda?</h2>
+        </div>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="row d-flex justify-content-center align-items-center" style="max-width:1540px; margin: auto auto 2rem auto;">
+
+        <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
+
+            <div class="row mt-4">
+                <div class="col-lg-6" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+                    <a href="mailto:itusoftware@gmail.com" target="_blank" class="btn btn-block mb-2 deep_hover"
+                        style="text-decoration: none;  background-color: #4d4d4d; color: #FFF;  border-radius: 4px;"><i
+                            class="fa fa-envelope mr-2"></i>itusoftware@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>				
+				
+				
+				
+<!-- END OF SPANISH -->	
+				
+<!-- BASQUE -->
+<div  style="border: 1px solid #00aef0; width: 100%; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+<p />					
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row">
+      <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <h1 id="Basque" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> ITU LOG </h1> 
+            <p class="lead text-center" style="color: #102e42;"> Odoo-n konfiguratuta dagoen Log fitxategira modu erraz batean mezuak bidaltzen uzten digun modulua</p>
+	     <p>Mezuak Odoo Debug moduan dagoenean bidaltzen ditu bakarrik </p>
+      </div>
+    </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalazioa:</h2>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Ezarpenak:</h2>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Erabilpena: </h2>
+	<ul>
+		  <li>Moduloa horrela importatu dezakezu:</li>
+		  <ul>
+			  <li>from odoo.addons.itu_log.models import itu_log</li>
+			  <li>ItuLog = itu_log.ItuLog()</li>
+		  </ul>
+		  <li>Mezua bidatzeko komando hay erabili:</li>
+		  <ul>
+			  <li>ItuLog.DebugText(" MENSAGE ")</li>
+		  </ul>
+	 	 <li>Mezua bidali baino lehen moduluak Odoo debug moduan dagoen egiaztatzen du</li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Arazo ezagunak: </h2> 
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+				
+<section class="container" style="margin: 1rem auto 2rem;">
+    <div class="row" style="max-width:1540px;">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Laguntza behar duzu?</h2>
+        </div>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="row d-flex justify-content-center align-items-center" style="max-width:1540px; margin: auto auto 2rem auto;">
+
+        <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
+
+            <div class="row mt-4">
+                <div class="col-lg-6" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+                    <a href="mailto:itusoftware@gmail.com" target="_blank" class="btn btn-block mb-2 deep_hover"
+                        style="text-decoration: none;  background-color: #4d4d4d; color: #FFF;  border-radius: 4px;"><i
+                            class="fa fa-envelope mr-2"></i>itusoftware@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>				
+				
+				
+				
+<!-- END OF BASQUE -->					
+				
+				
+<!-- END OF HERO -->
+
+<!-- FOOTER -->
+				
+<!-- Footer Section -->			
+				
+				
 <!-- Footer -->
-<section class="oe_container" style="padding: 2rem 3rem 1rem;"></section>
-<div  style="border: 3px solid #00aef0; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
+<section class="oe_container" style="padding: 1rem 3rem 1rem;"></section>
+<div  style="border: 3px solid #00aef0; width: 100%; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
 <!-- END OF FOOTER -->
