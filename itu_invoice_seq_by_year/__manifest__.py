@@ -4,7 +4,7 @@
     "summary": "Permite configurar las secuencias como FACT / AÑO / Numero, sin que aparecezca el mes..",
     "version": "14.0.0.0.3",
     "category": "Accounting & Finance",
-    "website": "",
+    "website": "https://github.com/itu1982/itu_odoo_addons",
     "author": "Gorka Iturralde",
     "license": "AGPL-3",
     "support": "itusoftware@gmail.com",
