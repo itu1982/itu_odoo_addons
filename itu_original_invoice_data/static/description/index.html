@@ -130,15 +130,8 @@
 <section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
     <div class="row">
       <div class="col-lg-12 d-flex flex-column justify-content-center">
-            <h1 id="Spanish" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> Itu TicketBAI FS </h1> 
-            <p>M&#243;dulo que adapta los m&#243;dulos de TicketBai (l10n_es_ticketbai_api y l10n_es_ticketbai) que puedes encontrar en https://github.com/OCA/l10n-spain/ para que puedas crear y rectificar facturas simplificadas desde la pantalla de Facturaci&#243;n/Contabilidad (Account.move) y que se env&#237;en autom&#225;ticamente a los servidores de TBAI.</p>
-		<ul>
-		  <li>Si tenemos marcado al cliente como An&#243;nimo (AEAT - Cliente an&#243;nimo) y el cliente no tiene DNI o CIF creara una factura simplificada.</li>
-		  <li>Crea un Diario de contabilidad (account.journal) para facturas simplificadas, de esta manera tendr&#225;n su propia secuencia y control.</li>
-		  <li>Controla que el importe de la factura simplificada no sea superior al limite legal. Por defecto son 3000&euro;.</li>
-		  <li>Se puede usar con TicketBAI Deshabilitado o habilitado.</li>
-		  <li>Adapta el archivo que se env&#237;a a TicketBAI para indicar que es una factura simplificada o una rectificaci&#243;n de una factura simplificada.</li>
-		</ul>
+            <h1 id="Spanish" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> ITU ORIGINAL INVOICE DATA </h1> 
+            <p>Guarda los datos de Cliente y Empresa a la hora de confirmar las facturas de esta manera nos mostrara los datos originales al reimprimirlas</p>
       </div>
     </div>
 </section>
@@ -153,9 +146,6 @@
         <ul>
           <li>account</li>
           <li>itu_log</li>
-	  <li>l10n_es_ticketbai</li>
-	  <li>itu_original_invoice_data</li>
-          <li>l10n_es_ticketbai_api.</li>
         </ul>
     </div>
   </div>
@@ -167,18 +157,15 @@
   <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Configuraci&#243;n:</h2>
-       <ul>
-          <li>Por defecto el m&#243;dulo se configura con un Diario nuevo para facturas simplificadas usando el c&#243;digo FS y con un l&#237;mite para factura simplificada de 3000&euro;.</li>
-	  <li>Para configurar un cliente como an&#243;nimo:</li>
+
+          <p>Funciona autom&#225;ticamente con los Dise&#241;os b&#225;sicos: </p>
           <ul>
-		  <li>Ir a Contactos &gt; Nombre_Contacto &gt; Pesta&#241;a AEAT &gt;</li>
-		  <li>Marcar al cliente como An&#243;nimo (AEAT - Cliente an&#243;nimo)</li>
-		  <li>Seleccionar como Pa&#237;s (Espa&#241;a) y Dejar el IVA/NIF/CIF en blanco.</li>
-		  <li>Seleccionar como Posici&#243;n fiscal &quot;R&#233;gimen Nacional&quot;.</li>
+		  <li>Light</li>
+		  <li>Boxed</li>
+		  <li>Clean</li>
+		  <li>Background</li>
 	  </ul>
-	  <li>El diario para facturas simplificadas puede configurarse en Configuraci&#243;n &gt; Ajustes generales &gt; empresas &gt; Empresa &gt; Pesta&#241;a Factura simplificada.</li>
-	  <li>El l&#237;mite para las facturas simplificadas puede configurarse en Configuraci&#243;n &gt; Ajustes generales &gt; empresas &gt; Empresa &gt; Pesta&#241;a Factura simplificada.</li>
-        </ul>
+	  <p>Es f&#225;cil de implementar en tus dise&#241;os personalizados</p>
     </div>
   </div>
 </section>
@@ -189,7 +176,8 @@
 <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Uso: </h2>
-        <p dir="auto">Al crear una factura se comprueba si el cliente es an&#243;nimo y si tiene DNI/CIF. En caso de que este marcado como an&#243;nimo y no tenga DNI/CIF se crea una factura simplificada en vez de una normal.</p>
+        <p dir="auto">Guarda los datos de Cliente y Empresa a la hora de confirmar las facturas</p>
+	<p dir="auto">Muestra un mensaje en la factura si los datos originales han sido modificados</p>
 	</div>
   </div>
 </section>
@@ -200,18 +188,6 @@
 <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Problemas Conocidos: </h2> 
-	<p> El m&#243;dulo da error al crear una factura simplificada si no tienes configurada la secuencia de facturas &quot;normales&quot; o si toca regenerarla, por ejemplo al cambiar de mes o a&#241;o. Puedes solucionar este inconveniente simplemente generando una factura &quot;normal&quot;. </p>
-    </div>
-  </div>
-</section>
-
-<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
-
-<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
-  <div class="row" style="max-width:1540px;">
-      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Im&#225;genes:        </h2>
-        <p dir="auto"><a href="#Images">Click aqu&#237; para ver las im&#225;genes</a></p>
     </div>
   </div>
 </section>
@@ -253,16 +229,8 @@
 <section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
     <div class="row">
       <div class="col-lg-12 d-flex flex-column justify-content-center">
-            <h1 id="Basque" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> ITU TicketBAI FS </h1> 
-            <p class="lead text-center" style="color: #102e42;"> Faktura erraztuak Fakturazio/kontabilitate lehiotik (Account.move) egin ahal izateko TicketBai-eko moduloak (l10n_es_ticketbai_api y l10n_es_ticketbai) egokitzen dituen moduloa. TicketBaieko moduluak https://github.com/OCA/l10n-spain/ -en lortu ditzazkezu. </p>
-	    <ul>
-		  <li>Bezeroa anonimo bezala markatzen badegu (AEAT - Cliente an&#243;nimo) eta bezeroak NAN/IZF ez badu automatikoki faktura erraztu bat sortzen du</li>		
-		  <li>Faktura erraztuentzako kontabilitate liburu berri bat sortzen du (account.journal), bere sekuentzia eta egiaztapena errazteko.</li>
-		  <li>Faktura erraztuaren totala muga legala baiano handiago ez izatea egiaztatzen du.</li>
-		  <li>TicketBai aktibatuta edo desaktibatuta-rekin erabili daiteke.</li>
-		  <li>TicketBai aktibatuta izanda faktura erraztuak automatikoki bildaltzen dira.</li>
-		  <li>TicketBai-eko fitxategia moldatzen du faktura erraztu bat ala faktura erraztu rektifikatzaile bat dela adierazteko.</li>
-	     </ul>
+            <h1 id="Basque" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> ITU ORIGINAL INVOICE DATA </h1> 
+            <p class="lead text-center" style="color: #102e42;"> Bezero eta Enpresaren informazioa gordetzen du faktura baieztatzerakoan, horrela faktura jatorrizko datuekin imprimatuko da beti</p>
       </div>
     </div>
 </section>
@@ -277,9 +245,6 @@
         <ul>
           <li>account</li>
           <li>itu_log</li>
-	  <li>l10n_es_ticketbai</li>
-	  <li>itu_original_invoice_data</li>
-          <li>l10n_es_ticketbai_api</li>
         </ul>
     </div>
   </div>
@@ -291,18 +256,14 @@
   <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Ezarpenak:</h2>
-       <ul>
-          <li>Modulua instalatzerakoan Kontabilitate liburu berri bat sortzen du FS kodea eta 3000&euro; -ko mugarekin faktura erraztuentzako. </li>
-	  <li>Bezero bat anonimo bezala konfiguratzeko: </li>
+          <p> Automatikoki funtzionatzen du Hurrengo diseinu hauekin:</p>
           <ul>
-		  <li>Bezeroetara joan &gt; kontatuaren izena  &gt; AEAT fitxa  &gt; </li>
-		  <li>Bezeroa anonimo bezala markatu (AEAT - Cliente an&#243;nimo)</li>
-		  <li>Herrialde bezala Espa&#241;a aukeratu eta NAN/IFK txurian utzi </li>
-		  <li>Pozizio fiscala bezala "Regimen Nacional" aukeratu </li>
+		  <li>Light</li>
+		  <li>Boxed</li>
+		  <li>Clean</li>
+		  <li>Background</li>
 	  </ul>
-	  <li>Faktura erratuerako kontabilitate liburua konfigurazioak &gt; ezarpen orokorrak &gt; empresak &gt; empresa &gt; Faktura erraztua fitxan konfiguratu daiteke</li>
-	  <li>Faktura erraztuaren totalen muga legala konfigurazioak &gt; ezarpen orokorrak &gt; empresak &gt; empresa &gt; Faktura erraztua fitxan konfiguratu daiteke </li>
-        </ul>
+	  <p>Neurrira egindako diseinuak ere oso erraz modatu daitezke</p>
     </div>
   </div>
 </section>
@@ -313,7 +274,8 @@
 <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Erabilpena: </h2>
-        <p dir="auto">Factura berri bat sortzerakoan bezeroa anonimoa den eta NAN/IFK duen egiaztatzen da. Anonimoa eta NAN/IFK ez badu faktura erraztu bar sortzen da automatikoki</p>
+        <p dir="auto">Moduloak automatikoki gordetzen ditu bezeroaren eta empresaren datuak faktura egiaztatzerakoan</p>
+	<p dir="auto">Mezu bat azaltzen da faktura egin eta gero bezero edo empresaren datuak aldatzen badira </p>
     </div>
   </div>
 </section>
@@ -324,19 +286,6 @@
 <div class="row" style="max-width:1540px;">
       <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Arazo ezagunak: </h2> 
-	<p>Faktura normalen sekuentzia sortugabe baduzu edo berritzea tokatzen bada moduloak errorea emanten du faktura erraztu bat sortzerakoan. </p>
-	<p>Akats hau faktura normal bat sortuta konpontzen da.</p>
-    </div>
-  </div>
-</section>
-
-<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
-
-<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
-  <div class="row" style="max-width:1540px;">
-      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Argazkiak:        </h2>
-        <p dir="auto"><a href="#Images">Click hemen argazkiak ikusteko</a></p>
     </div>
   </div>
 </section>
