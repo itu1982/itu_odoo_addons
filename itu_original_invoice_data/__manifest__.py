@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name' : 'itu_original_invoice_data',
+    'name' : 'itu original invoice data',
     "summary": "Save Invoice Original Data in confirmation moment",
     "description": "Save Invoice Original Data in confirmation moment, when you reprint the invoice original data is recovered even if the customer's data has changed",
     "version": "14.0.0.0.1",
