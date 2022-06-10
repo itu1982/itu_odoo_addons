@@ -1,0 +1,10 @@
+14.0.0.0.2
+-------------------------------
+EN: 
+- Fixed error when AEAT module is not instaled.
+
+ES:
+- Reparado error cuando el modulo AEAT no esta instalado.
+
+EUS:
+- AEAT modulo instalatua ez dagoenean ematen duen errorea konponduta.
