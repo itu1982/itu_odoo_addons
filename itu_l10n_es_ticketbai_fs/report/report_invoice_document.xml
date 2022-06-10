@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <data>
-	<template id="itu_original_invoice_data.invoice_document" inherit_id="account.report_invoice_document">
+	<template id="itu_l10n_es_ticketbai_fs.invoice_document" inherit_id="account.report_invoice_document">
 
 		<xpath expr="//span[@t-field='o.name']" position="replace">
 			<t t-if="o.partner_id.aeat_anonymous_cash_customer">
