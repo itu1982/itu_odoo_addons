@@ -5,7 +5,6 @@
 			<t t-if="o.cliente.name">
 				<div name="OriginalPartner">
 					<t t-if="'aeat_anonymous_cash_customer' in o.partner_id and o.partner_id.aeat_anonymous_cash_customer">
-						<div>Cliente: </div>
 						<div><t t-esc="o.cliente.name" /></div>
 									
 					</t>
