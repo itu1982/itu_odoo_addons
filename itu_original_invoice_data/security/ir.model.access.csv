@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_itu_invoice_partner,itu.invoice.partner,model_itu_invoice_partner,account.group_account_invoice,1,0,0,0
+access_itu_invoice_partner_manager,itu.invoice.partner.manager,model_itu_invoice_partner,account.group_account_manager,1,1,1,1
+access_itu_invoice_company,itu.invoice.company,model_itu_invoice_company,account.group_account_invoice,1,0,0,0
+access_itu_invoice_company_manager,itu.invoice.company.manager,model_itu_invoice_company,account.group_account_manager,1,1,1,1

@@ -1,0 +1,10 @@
+14.0.0.0.7
+----------------
+EN:
+- Fixed invoice_docment form name error.
+
+ES:
+- Reparado error con un nombre en invoice_document
+
+EUS:
+- Invoice_document-en izen batekin zegoen arazoa zuzenduta.

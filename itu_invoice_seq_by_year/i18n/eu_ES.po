@@ -1,0 +1,59 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* itu_invoice_seq_by_year
+#
+#  <>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-04 17:20+0000\n"
+"PO-Revision-Date: 2022-06-04 \n"
+"Last-Translator:  <>\n"
+"Language-Team:  <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: itu_invoice_seq_by_year
+#: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_journal__display_name
+#: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_move__display_name
+msgid "Display Name"
+msgstr "Azaltzeko Izena"
+
+#. module: itu_invoice_seq_by_year
+#: model:ir.model.fields,help:itu_invoice_seq_by_year.field_account_journal__journal_by_year
+msgid ""
+"Enable Invoice sequence only by Code and Year. Only Works for new sequences. "
+"e.g. Fact/2022/0001"
+msgstr ""
+"Kodea eta urtea bakarrik erabiltzen duen sekuentzia.aktibatzen du. "
+"Sekuentzia berriekin funtzionatzen du soilik. "
+
+#. module: itu_invoice_seq_by_year
+#: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_journal__id
+#: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_move__id
+msgid "ID"
+msgstr "ID"
+
+#. module: itu_invoice_seq_by_year
+#: model:ir.model,name:itu_invoice_seq_by_year.model_account_journal
+msgid "Journal"
+msgstr "Liburua"
+
+#. module: itu_invoice_seq_by_year
+#: model:ir.model,name:itu_invoice_seq_by_year.model_account_move
+msgid "Journal Entry"
+msgstr "Kontabilitate idazpena"
+
+#. module: itu_invoice_seq_by_year
+#: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_journal____last_update
+#: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_move____last_update
+msgid "Last Modified on"
+msgstr "Azkeneko aldaketaren data"
+
+#. module: itu_invoice_seq_by_year
+#: model:ir.model.fields,field_description:itu_invoice_seq_by_year.field_account_journal__journal_by_year
+msgid "Sequences by year"
+msgstr "Urteko Sekuentziak"

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>	
+		<record id="itu_data_change_alert" model="ir.ui.view">
+            <field name="name">itu_data_change_alert</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="//header" position="after">
+                        <div class="alert alert-info" role="alert" style="margin-bottom:0px;" attrs="{'invisible':([('data_change_message','=', False)])}"> Invoice original data was change after invoice creation, reprint invoice to check original information </div>
+						<field name="data_change_message" invisible="1" ></field> 
+				</xpath>
+            </field>
+        </record>
+		
+		
+	</data>
+</odoo>

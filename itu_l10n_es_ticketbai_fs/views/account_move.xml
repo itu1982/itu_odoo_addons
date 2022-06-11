@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>	
+		<record id="fs_filter_button_id" model="ir.ui.view">
+            <field name="name">fs_filters</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="arch" type="xml">
+				<xpath expr="//filter[@name='myinvoices']" position="after">
+					<filter domain="[['tbai_invoice_id.simplified_invoice','=','S']]" name="Facturas Simplificadas filter" string="Simplified Invoices"/>
+					<filter domain="['|',
+									('tbai_invoice_id.simplified_invoice','!=','S'),
+									('tbai_invoice_id','=',False),
+									]" 
+									name="Facturas filter" string="Invoices"/>
+				</xpath>
+            </field>
+        </record>
+	</data>
+</odoo>

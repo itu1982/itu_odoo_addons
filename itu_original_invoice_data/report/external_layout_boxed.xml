@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<data>
+	<template id="itu_original_invoice_data.boxed" inherit_id="web.external_layout_boxed">
+		<xpath expr="//span [@t-field='company.partner_id']" position="replace"> 
+			<span />
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<span t-field="o.compania.name"/> <br />
+				<span t-field="o.compania.street"/> <br />
+				<span t-field="o.compania.zip"/>, <span t-field="o.compania.city"/> <br />
+				<span t-field="o.compania.state"/>, <span t-field="o.compania.country"/>
+			</t>
+			<t t-else="">
+				<div t-field="company.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: true}"/>
+			</t>
+			
+		</xpath>
+			
+		<xpath expr="//li [@t-if='company.phone']" position="replace"> 
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<li t-if="o.compania.phone" class="list-inline-item d-inline"><span class="o_force_ltr" t-field="o.compania.phone"/></li>
+			</t>
+			<t t-else="">
+				<li t-if="company.phone" class="list-inline-item d-inline"><span class="o_force_ltr" t-field="company.phone"/></li>
+			</t>
+		</xpath>
+		
+		<xpath expr="//li [@t-if='company.email']" position="replace"> 
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<li t-if="o.compania.email" class="list-inline-item d-inline"><span t-field="o.compania.email"/></li>
+			</t>
+			<t t-else="">
+				<li t-if="company.email" class="list-inline-item d-inline"><span t-field="company.email"/></li>
+			</t>
+		</xpath>
+		
+		<xpath expr="//li [@t-if='company.website']" position="replace"> 
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<li t-if="o.compania.website" class="list-inline-item d-inline"><span t-field="o.compania.website"/></li>
+			</t>
+			<t t-else="">
+				<li t-if="company.website" class="list-inline-item d-inline"><span t-field="company.website"/></li>
+			</t>
+		</xpath>
+		
+		<xpath expr="//li [@t-if='company.vat']" position="replace"> 
+			<t t-if="doc_model == 'account.move' and o.compania.name">
+				<li t-if="o.compania.vat" class="list-inline-item d-inline"><t t-esc="company.country_id.vat_label or 'Tax ID'"/>: <span t-field="o.compania.vat"/></li>
+			</t>
+			<t t-else="">
+				<li t-if="company.vat" class="list-inline-item d-inline"><t t-esc="company.country_id.vat_label or 'Tax ID'"/>: <span t-field="company.vat"/></li>
+			</t>
+		</xpath>
+		
+	</template>    
+</data>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+	
+		<!-- Añadimos el Boton Factura simplificada en el header -->
+        <record id="tbaifs_aeat_form" model="ir.ui.view">
+            <field name="name">Fact_Simp_Lim</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="l10n_es_ticketbai_api.view_company_form_inherit"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='ticketbai']" position="after">
+                    <page name="tbai_fs" string="Factura Simplificada" modifiers="{}">
+                        <group name="gFactura simplificada" >
+                             <field name="tbai_fs_limit"></field>
+                             <field name="tbai_fs_journal_id"></field> 
+                        </group> 
+                    </page>
+                </xpath>
+            </field>
+        </record>
+		
+	</data>
+</odoo>

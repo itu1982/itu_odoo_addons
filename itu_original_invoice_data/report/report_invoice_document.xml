@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<data>
+	<template id="itu_original_invoice_data.invoice_document" inherit_id="account.report_invoice_document">
+		<xpath expr="//address" position="replace">
+			<t t-if="o.cliente.name">
+				<div name="OriginalPartner">
+					<t t-if="'aeat_anonymous_cash_customer' in o.partner_id and o.partner_id.aeat_anonymous_cash_customer">
+						<div>Cliente: </div>
+						<div><t t-esc="o.cliente.name" /></div>
+									
+					</t>
+					<t t-else="">
+						<br />
+						<div><t t-esc="o.cliente.name" /></div>
+						<div><t t-esc="o.cliente.street" />
+							<div> <t t-esc="o.cliente.zip" />, <t t-esc="o.cliente.city" />  </div>
+							<div> <t t-esc="o.cliente.state" />, <t t-esc="o.cliente.country" /> </div>
+						</div>
+					</t>
+				</div>
+			</t>
+			<t t-else="">
+				<address t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+			</t>
+		</xpath>
+
+		<xpath expr="//span[@t-field='o.partner_id.vat']" position="replace">
+			<t t-if="o.cliente.name">
+				<span t-field="o.cliente.vat"/>
+			</t>
+			<t t-else="">
+				<span t-field="o.partner_id.vat"/>
+			</t>
+		</xpath>
+	</template>    
+</data>
