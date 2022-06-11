@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-04 18:12+0000\n"
-"PO-Revision-Date: 2022-06-04 \n"
+"POT-Creation-Date: 2022-06-11 14:12+0000\n"
+"PO-Revision-Date: 2022-06-11 \n"
 "Last-Translator:  <>\n"
 "Language-Team:  <>\n"
 "MIME-Version: 1.0\n"
@@ -20,6 +20,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
 msgid "21% TAX INCLUDED"
 msgstr "21% IVA INCLUIDO"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.invoice_document
+msgid "<span> Simplified </span>"
+msgstr "<span> Simplificada </span>"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_res_company__tbai_fs_journal_id
@@ -40,8 +45,6 @@ msgid ""
 "BOE-A-1992-28740. Ley 37/1992, de 28 de diciembre, del Impuesto sobre el "
 "Valor Añadido. Artículo 80. Modificación de la base imponible."
 msgstr ""
-"BOE-A-1992-28740. Ley 37/1992, de 28 de diciembre, del Impuesto sobre el "
-"Valor Añadido. Artículo 80. Modificación de la base imponible."
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model:ir.model,name:itu_l10n_es_ticketbai_fs.model_res_company
@@ -75,12 +78,17 @@ msgstr "Desc"
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice__display_name
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice_customer__display_name
 msgid "Display Name"
-msgstr "Nombre para Mostrar"
+msgstr "Mostrar nombre"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_res_company__fs_dont_print_logo
+msgid "Don't print logo in simplified invoice"
+msgstr "No imprimir logo en factura simplificada"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.tbaifs_aeat_form
 msgid "Factura Simplificada"
-msgstr "Factura Simplificada"
+msgstr "Factura simplificada"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_journal__id
@@ -89,7 +97,7 @@ msgstr "Factura Simplificada"
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice__id
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice_customer__id
 msgid "ID"
-msgstr "ID"
+msgstr "Identificador"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
@@ -129,6 +137,11 @@ msgstr "Última modificación el"
 #: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
 msgid "Logo"
 msgstr "Logo"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_res_company__fs_logo
+msgid "Logo for simplified invoice"
+msgstr "Logo para facturas simplificadas"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template

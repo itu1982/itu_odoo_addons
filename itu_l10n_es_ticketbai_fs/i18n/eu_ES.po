@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-04 18:12+0000\n"
-"PO-Revision-Date: 2022-06-04 \n"
+"POT-Creation-Date: 2022-06-11 14:18+0000\n"
+"PO-Revision-Date: 2022-06-11 \n"
 "Last-Translator:  <>\n"
 "Language-Team:  <>\n"
 "MIME-Version: 1.0\n"
@@ -20,6 +20,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
 msgid "21% TAX INCLUDED"
 msgstr "21% BEZ BARNE"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.invoice_document
+msgid "<span> Simplified </span>"
+msgstr "<span> Erraztua </span>"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_res_company__tbai_fs_journal_id
@@ -40,8 +45,6 @@ msgid ""
 "BOE-A-1992-28740. Ley 37/1992, de 28 de diciembre, del Impuesto sobre el "
 "Valor Añadido. Artículo 80. Modificación de la base imponible."
 msgstr ""
-"BOE-A-1992-28740. Ley 37/1992, de 28 de diciembre, del Impuesto sobre el "
-"Valor Añadido. Artículo 80. Modificación de la base imponible."
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model:ir.model,name:itu_l10n_es_ticketbai_fs.model_res_company
@@ -75,7 +78,7 @@ msgstr "Desk."
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice__display_name
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice_customer__display_name
 msgid "Display Name"
-msgstr "Erakusteko Izena"
+msgstr "Izena erakutsi"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.tbaifs_aeat_form
@@ -109,12 +112,12 @@ msgstr "Faktura"
 #. module: itu_l10n_es_ticketbai_fs
 #: model:ir.model,name:itu_l10n_es_ticketbai_fs.model_account_journal
 msgid "Journal"
-msgstr "Liburua"
+msgstr "Egunkaria"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model:ir.model,name:itu_l10n_es_ticketbai_fs.model_account_move
 msgid "Journal Entry"
-msgstr "Kontabilitate sarrera"
+msgstr "Egunkari-sarrera"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_journal____last_update
@@ -123,7 +126,7 @@ msgstr "Kontabilitate sarrera"
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice____last_update
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_tbai_invoice_customer____last_update
 msgid "Last Modified on"
-msgstr "Azkeneko aldaketaren data"
+msgstr "Azken aldaketa"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
