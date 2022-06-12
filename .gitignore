@@ -1,1 +1,3 @@
+*.pyc
 itu_repair/
+__pycache__/
