@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-11 14:18+0000\n"
-"PO-Revision-Date: 2022-06-11 \n"
+"POT-Creation-Date: 2022-06-13 20:21+0000\n"
+"PO-Revision-Date: 2022-06-13 \n"
 "Last-Translator:  <>\n"
 "Language-Team:  <>\n"
 "MIME-Version: 1.0\n"
@@ -95,6 +95,13 @@ msgid "ID"
 msgstr "ID"
 
 #. module: itu_l10n_es_ticketbai_fs
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_bank_statement_line__invoice_datetime
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_move__invoice_datetime
+#: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_payment__invoice_datetime
+msgid "Invoice Date"
+msgstr "Fakturaren data"
+
+#. module: itu_l10n_es_ticketbai_fs
 #: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_factura_simplificada_template
 msgid "Invoice Nº:"
 msgstr "Faktura Zk:"
@@ -172,6 +179,11 @@ msgstr "Itzulketa Faktura erraztua"
 #: model:ir.model.fields.selection,name:itu_l10n_es_ticketbai_fs.selection__tbai_invoice__refund_code__r5
 msgid "Simplified refund invoice"
 msgstr "Itzulketa Faktura erraztua"
+
+#. module: itu_l10n_es_ticketbai_fs
+#: model_terms:ir.ui.view,arch_db:itu_l10n_es_ticketbai_fs.itu_invoice_datetime_form
+msgid "Sort Invoice Date"
+msgstr "Fakturak ordenatzeko data:"
 
 #. module: itu_l10n_es_ticketbai_fs
 #: model:ir.model.fields,field_description:itu_l10n_es_ticketbai_fs.field_account_bank_statement_line__tbai_refund_key
