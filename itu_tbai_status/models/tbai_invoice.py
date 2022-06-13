@@ -44,13 +44,8 @@ class TbaiStateAccountMove(models.Model):
         ItuLog.DebugText(' **************** Compute G State  ****************') 
         #Cogemos el valor de state y lo modificamos solo en caso de que sea necesario.
         #Por ejemplo si hay mas de un mensaje de respuesta lo cambiamos a Warning
-        self.general_state = self.state
-        if self.general_state == TicketBaiInvoiceState.sent.value and len(self.tbai_response_ids.tbai_response_message_ids) > 1:
-            self.general_state = "Warning"
-            
-            #respuestas = self.tbai_response_ids
-            #respuestas.sorted(key='write_date')    
-            #for respuesta in respuestas:
-            #    general_state == TicketBaiInvoiceState.sent.value
-            #    if 
+        for record in self:
+            record.general_state = record.state
+            if record.general_state == TicketBaiInvoiceState.sent.value and len(record.tbai_response_ids.tbai_response_message_ids) > 1:
+                record.general_state = "Warning"
          

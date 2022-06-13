@@ -1,0 +1,10 @@
+14.0.0.0.2
+-------------------
+EN: 
+- Repaired Singleton error.
+
+ES:
+- Reparado error singleton.
+
+EUS:
+- Singleton errorea zuzenduta.
