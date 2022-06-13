@@ -2,7 +2,7 @@
 {
     'name' : 'Itu TicketBAI FS',
     "summary": "Agrega la posibilidad de crear facturas simplificadas desde facturacion/contabilidad.",
-    "version": "14.0.0.0.7",
+    "version": "14.0.0.0.8",
     "category": "Accounting & Finance",
     "website": "https://github.com/itu1982/itu_odoo_addons",
     "author": "Gorka Iturralde",

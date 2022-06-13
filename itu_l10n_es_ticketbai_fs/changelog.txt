@@ -1,3 +1,14 @@
+14.0.0.0.8
+----------------
+EN:
+- Date and time added to invoice for sort invoices.
+
+ES:
+- Añadido campo fecha y hora a las facturas para poder ordenar la lista de facturas. 
+
+EUS:
+- Ordua eta data fakturetara gehituta, fakturak ordenatu ahal izateko.
+
 14.0.0.0.7
 ----------------
 EN:

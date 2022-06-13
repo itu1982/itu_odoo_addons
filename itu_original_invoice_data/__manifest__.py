@@ -3,7 +3,7 @@
     'name' : 'itu original invoice data',
     "summary": "Save Invoice Original Data in confirmation moment",
     "description": "Save Invoice Original Data in confirmation moment, when you reprint the invoice original data is recovered even if the customer's data has changed",
-    "version": "14.0.0.0.3",
+    "version": "14.0.0.0.4",
     "category": "Accounting",
     "website": "https://github.com/itu1982/itu_odoo_addons",
     "author": "Gorka Iturralde",
