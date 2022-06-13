@@ -19,15 +19,20 @@ ItuLog = itu_log.ItuLog()
 class TbaiAccountMoveFS(models.Model):
     _inherit = 'account.move'
     tbai_refund_key = fields.Selection(selection_add=[(RefundCode.R5.value, 'Simplified Refund invoice'),],)
+    invoice_datetime = fields.Datetime('Invoice Date')
        
     def action_post(self):
         ItuLog.DebugText(" **************** ACTION POST ************** ")
-        if not self.partner_id.vat and self.partner_id.aeat_anonymous_cash_customer:
-            ItuLog.DebugText(" **************** CAMBIO DIARIO ************** ")
-            self.journal_id = self.company_id.tbai_fs_journal_id
-        else:
-            ItuLog.DebugText(" **************** DNI ENCONTRADO ************** " + str(self.partner_id.vat))    
-            
+        
+        #Cuidado con el error singleton
+        for registro in self:
+            registro.invoice_datetime = datetime.now()
+            if not registro.partner_id.vat and registro.partner_id.aeat_anonymous_cash_customer:
+                ItuLog.DebugText(" **************** CAMBIO DIARIO ************** ")
+                registro.journal_id = registro.company_id.tbai_fs_journal_id
+            else:
+                ItuLog.DebugText(" **************** DNI ENCONTRADO ************** " + str(registro.partner_id.vat))    
+                
         result = super(TbaiAccountMoveFS, self).action_post()
         return result
         
@@ -47,12 +52,23 @@ class TbaiAccountMoveFS(models.Model):
             ItuLog.DebugText(" **************** tbai_is_invoice_refund R5 ************** ")
             self.tbai_refund_key = RefundCode.R5.value    
         return result
-               
-    def Fact_Simplificada(self):
-        ItuLog.DebugText(" **************** FACT. SIMP. MESCRIBIENDO ************** ")
-        self.action_post()
-        return False
         
-    def FacturasSimplificadas(self):
-        return False
+    @api.model_create_multi
+    def create(self, vals_list):
+        ItuLog.DebugText(" **************** Tbai FS AC.MV CREATE ************** ")
+        for vals in vals_list:
+            if 'invoice_datetime' in vals:
+                ItuLog.DebugText(" **************** Guardando fecha ************** ")
+                vals["invoice_datetime"] = datetime.now()
+                
+        rslt = super(TbaiAccountMoveFS, self).create(vals_list)
+        return rslt
+                      
+#    @api.onchange("to_check")
+#    def check_invoice_datetime(self):
+#        ItuLog.DebugText(" **************** onchange_check_invoice_datetime ************** ")
+#        for record in self:
+#            if not record.invoice_datetime:
+#                ItuLog.DebugText(" **************** onchange_CIDT > Modificando! ")
+#                record.invoice_datetime = datetime.now()
 

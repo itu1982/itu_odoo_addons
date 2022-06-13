@@ -1,3 +1,18 @@
+14.0.0.0.3
+-------------------------------
+EN: 
+- Fixed Singleton error in write functions for Partner and Company (for example when we activating serial numbers in invoices)
+- Invoice modification alert will not show in draft invoices.
+
+ES:
+- El mensaje de la factura a cambiado no debe aparecer si la factura es un borrador.
+- Prevenir error singleton en la funcion write del partner y company (Por ejemplo este error se producia al activar los numeros de serie en facturas).
+
+EUS:
+- Faktura aldatu dela abisatzen duen mezua ez da faktura zirriborroetan aterako.
+- Singleton errorea zuzenduta, adibidez serie zenbakiak fakturetan aktibatzerakoan. 
+
+
 14.0.0.0.2
 -------------------------------
 EN: 
