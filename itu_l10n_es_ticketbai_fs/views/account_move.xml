@@ -38,7 +38,7 @@
                 </xpath>
             </field>
         </record>
-		
+        	
 		<record id="itu_invoice_tree_order" model="ir.ui.view">
             <field name="name">ItuInvoiceTreeOrder</field>
             <field name="model">account.move</field>

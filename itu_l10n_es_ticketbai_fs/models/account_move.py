@@ -4,6 +4,7 @@ from datetime import datetime
 from odoo.exceptions import ValidationError
 from odoo.exceptions import UserError
 from pprint import pprint
+from odoo import _
 from odoo.addons.itu_log.models import itu_log
 import logging, random
 
@@ -63,12 +64,6 @@ class TbaiAccountMoveFS(models.Model):
                 
         rslt = super(TbaiAccountMoveFS, self).create(vals_list)
         return rslt
-                      
-#    @api.onchange("to_check")
-#    def check_invoice_datetime(self):
-#        ItuLog.DebugText(" **************** onchange_check_invoice_datetime ************** ")
-#        for record in self:
-#            if not record.invoice_datetime:
-#                ItuLog.DebugText(" **************** onchange_CIDT > Modificando! ")
-#                record.invoice_datetime = datetime.now()
+        
+
 

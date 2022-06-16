@@ -1,1 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_itu.payment.itu_register,itu.payment.itu_register,model_itu_payment_itu_register,account.group_account_invoice,1,0,0,0
+access_itu.payment.itu_register_manager,itu.payment.itu_register,model_itu_payment_itu_register,account.group_account_manager,1,1,1,1

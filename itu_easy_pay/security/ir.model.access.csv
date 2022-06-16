@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_itu.easy_pay.itu_register,itu.easy_pay.itu_register,model_itu_easy_pay_itu_register,account.group_account_invoice,1,0,0,0
+access_itu.easy_pay.itu_register_manager,itu.easy_pay.itu_register_mng,model_itu_easy_pay_itu_register,account.group_account_manager,1,1,1,1

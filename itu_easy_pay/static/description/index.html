@@ -1,0 +1,425 @@
+<div class="container" style="padding: 1rem !important; margin-bottom: 1.5rem !important;">
+    <div class="row" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+        <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between"
+            style="border-bottom: 1px solid #d5d5d5;">
+            <div class="FondoTitulo"><img src="ItuSoftware3Hori.png" width="512" height="150" /></div>
+      </div>
+    </div>
+</div>
+<div  style="border: 3px solid #00aef0; height: 2px; padding: 0; margin: 20px auto 0 auto;" />
+<p />
+
+<div class="divTable" style="display: table; width: 50%; text-align: center; vertical-align: middle; margin-left: auto; margin-right: auto;">
+	<div class="divTableBody" style="display: table-row-group;">
+		<div class="divTableRow" style="width: 100%; text-align: center; vertical-align: middle; display: table-row;">
+			<div class="divTableCell" style="width: 100%; text-align: center; vertical-align: middle; display: table-cell; padding: 3px 10px;"><h4> Select language: </h4></div>
+		</div>
+	</div>
+</div>
+
+<div class="divTable" style="display: table; width: 35%; text-align: center; vertical-align: middle; margin-left: auto; margin-right: auto;">
+	<div class="divTableBody" style="display: table-row-group;">
+		<div class="divTableRow" style="display: table-row;">
+			<div class="divTableCell" style="width: 33%; text-align: center; vertical-align: middle; display: table-cell; padding: 3px 10px;"><a href="#Basque"><img alt="Basque" src="images/ikurrina.png" width=75" height="35"></a></div>
+			<div class="divTableCell" style="width: 33%; text-align: center; vertical-align: middle; display: table-cell; padding: 3px 10px;"><a href="#Spanish"><img alt="Basque" src="images/espana.png" width=75" height="35"></a></div>
+			<div class="divTableCell" style="text-align: center; vertical-align: middle; display: table-cell; padding: 3px 10px;"><a href="#English"><img alt="Basque" src="images/ingles.png" width=75" height="35"></a></div>
+		</div>
+	</div>
+</div>
+<div  style="border: 1px solid #00aef0; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+<p />	
+
+<!-- HERO -->
+<!-- ENGLISH -->				
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row">
+      <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <h1 id="English" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> Itu Easy Pay </h1> 
+		<p style="text-align: center; vertical-align: middle;"> 14.0.0.0.8 (13/06/2022) </p>		
+		<p>Module that adapts the ticketbai modules (l10n_es_ticketbai_api and l10n_es_ticketbai) that you can find in https://github.com/OCA/l10n-spain/ so you can create and rectify simplified invoices from the Invoicing/Accounting screen (Account.move) and send them automatically to TBAI servers.</p>
+		<ul>
+		  <li> If we have marked the client as Anonymous (AEAT - Anonymous Client) and the client does not have a DNI or CIF it will create a simplified invoice.</li>
+		  <li>Create an accounting journal (account.journal) for simplified invoices, this way they will have their own sequence and control.</li>
+		  <li>Check that the amount of the simplified invoice does not exceed the legal limit. By default it is 3000&euro; .</li>
+		  <li>It can be used with ticketbai Disabled or enabled.</li>
+		  <li>Adapts the file that is sent to ticketbai to indicate that it is a simplified invoice or a rectification of a simplified invoice.</li>
+          <li>Date and time added to invoice for sort invoices</li>
+		</ul>
+      </div>
+    </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalation:</h2>
+        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">That module requiere this extra modules:</h5>
+        <ul>
+          <li>account</li>
+          <li>itu_log</li>
+	  <li>l10n_es_ticketbai</li>
+	  <li>itu_original_invoice_data</li>
+          <li>l10n_es_ticketbai_api.</li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Configuration:</h2>
+	<ul>
+          <li>By default the module is configured with a new Journal for simplified invoices using the FS code and with a limit for simplified invoice of 3000&euro;.</li>
+	  <li>To configure a customer as anonymous:</li>
+          <ul>
+		  <li>Go to Contacts &gt; Contact_Name &gt; AEAT tab &gt;</li>
+		  <li>Mark the customer as Anonymous (AEAT - Anonymous Customer)</li>
+		  <li>Select as Country (Spain) and leave VAT/NIF/CIF blank.</li>
+		  <li>Select as Fiscal Position "National Regime".</li>
+	  </ul>
+	  <li>The journal for simplified invoices can be configured in Configuration &gt; General Settings &gt; Companies &gt; Company &gt; Simplified Invoice tab.</li>
+	  <li>The limit for simplified invoices can be configured in Configuration > General Settings > Companies > Company > Company > Simplified Invoice tab.</li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Usage: </h2>
+          <p>When creating an invoice it is checked if the customer is anonymous and if he/she has a DNI/CIF. If the customer is anonymous and does not have a DNI, a simplified invoice is created instead of a normal one.</p>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Known issues:        </h2>
+	<p>The module gives error when creating a simplified invoice if you have not configured the sequence of "normal" invoices or if you have to regenerate it, for example when changing month or year. You can solve this problem by simply generating a "normal" invoice.</p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Images:        </h2>
+        <p dir="auto"><a href="#Images">click here to view the pictures below</a></p>
+    </div>
+  </div>
+</section>
+							
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+				
+<section class="container" style="margin: 1rem auto 2rem;">
+    <div class="row" style="max-width:1540px;">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Need Help?</h2>
+        </div>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="row d-flex justify-content-center align-items-center" style="max-width:1540px; margin: auto auto 2rem auto;">
+
+        <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
+
+            <div class="row mt-4">
+                <div class="col-lg-6" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+                    <a href="mailto:itusoftware@gmail.com" target="_blank" class="btn btn-block mb-2 deep_hover"
+                        style="text-decoration: none;  background-color: #4d4d4d; color: #FFF;  border-radius: 4px;"><i
+                            class="fa fa-envelope mr-2"></i>itusoftware@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- END OF ENGLISH -->
+
+<!-- SPANISH -->
+				
+<div  style="border: 1px solid #00aef0; width:100%; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+<p />					
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row">
+      <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <h1 id="Spanish" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> Itu TicketBAI FS </h1> 
+	    <p style="text-align: center; vertical-align: middle;"> 14.0.0.0.8 (13/06/2022) </p>
+            <p>M&#243;dulo que adapta los m&#243;dulos de TicketBai (l10n_es_ticketbai_api y l10n_es_ticketbai) que puedes encontrar en https://github.com/OCA/l10n-spain/ para que puedas crear y rectificar facturas simplificadas desde la pantalla de Facturaci&#243;n/Contabilidad (Account.move) y que se env&#237;en autom&#225;ticamente a los servidores de TBAI.</p>
+		<ul>
+		  <li>Si tenemos marcado al cliente como An&#243;nimo (AEAT - Cliente an&#243;nimo) y el cliente no tiene DNI o CIF creara una factura simplificada.</li>
+		  <li>Crea un Diario de contabilidad (account.journal) para facturas simplificadas, de esta manera tendr&#225;n su propia secuencia y control.</li>
+		  <li>Controla que el importe de la factura simplificada no sea superior al limite legal. Por defecto son 3000&euro;.</li>
+		  <li>Se puede usar con TicketBAI Deshabilitado o habilitado.</li>
+		  <li>Adapta el archivo que se env&#237;a a TicketBAI para indicar que es una factura simplificada o una rectificaci&#243;n de una factura simplificada.</li>
+          <li>Añadido campo fecha y hora a las facturas para poder ordenar la lista de facturas</li>
+		</ul>
+      </div>
+    </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalaci&#243;n:</h2>
+        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Este m&#243;dulo requiere de los m&#243;dulos:</h5>
+        <ul>
+          <li>account</li>
+          <li>itu_log</li>
+	  <li>l10n_es_ticketbai</li>
+	  <li>itu_original_invoice_data</li>
+          <li>l10n_es_ticketbai_api.</li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Configuraci&#243;n:</h2>
+       <ul>
+          <li>Por defecto el m&#243;dulo se configura con un Diario nuevo para facturas simplificadas usando el c&#243;digo FS y con un l&#237;mite para factura simplificada de 3000&euro;.</li>
+	  <li>Para configurar un cliente como an&#243;nimo:</li>
+          <ul>
+		  <li>Ir a Contactos &gt; Nombre_Contacto &gt; Pesta&#241;a AEAT &gt;</li>
+		  <li>Marcar al cliente como An&#243;nimo (AEAT - Cliente an&#243;nimo)</li>
+		  <li>Seleccionar como Pa&#237;s (Espa&#241;a) y Dejar el IVA/NIF/CIF en blanco.</li>
+		  <li>Seleccionar como Posici&#243;n fiscal &quot;R&#233;gimen Nacional&quot;.</li>
+	  </ul>
+	  <li>El diario para facturas simplificadas puede configurarse en Configuraci&#243;n &gt; Ajustes generales &gt; empresas &gt; Empresa &gt; Pesta&#241;a Factura simplificada.</li>
+	  <li>El l&#237;mite para las facturas simplificadas puede configurarse en Configuraci&#243;n &gt; Ajustes generales &gt; empresas &gt; Empresa &gt; Pesta&#241;a Factura simplificada.</li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Uso: </h2>
+        <p dir="auto">Al crear una factura se comprueba si el cliente es an&#243;nimo y si tiene DNI/CIF. En caso de que este marcado como an&#243;nimo y no tenga DNI/CIF se crea una factura simplificada en vez de una normal.</p>
+	</div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Problemas Conocidos: </h2> 
+	<p> El m&#243;dulo da error al crear una factura simplificada si no tienes configurada la secuencia de facturas &quot;normales&quot; o si toca regenerarla, por ejemplo al cambiar de mes o a&#241;o. Puedes solucionar este inconveniente simplemente generando una factura &quot;normal&quot;. </p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Im&#225;genes:        </h2>
+        <p dir="auto"><a href="#Images">Click aqu&#237; para ver las im&#225;genes</a></p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+				
+<section class="container" style="margin: 1rem auto 2rem;">
+    <div class="row" style="max-width:1540px;">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">&#191;Necesitas Ayuda?</h2>
+        </div>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="row d-flex justify-content-center align-items-center" style="max-width:1540px; margin: auto auto 2rem auto;">
+
+        <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
+
+            <div class="row mt-4">
+                <div class="col-lg-6" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+                    <a href="mailto:itusoftware@gmail.com" target="_blank" class="btn btn-block mb-2 deep_hover"
+                        style="text-decoration: none;  background-color: #4d4d4d; color: #FFF;  border-radius: 4px;"><i
+                            class="fa fa-envelope mr-2"></i>itusoftware@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>				
+				
+				
+				
+<!-- END OF SPANISH -->	
+				
+<!-- BASQUE -->
+<div  style="border: 1px solid #00aef0; width: 100%; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+<p />					
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row">
+      <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <h1 id="Basque" class="text-center" style="font-family: Montserrat, 'sans-serif'; font-weight: 800; color:#0a1e2c;"> ITU TicketBAI FS </h1> 
+       	    <p style="text-align: center; vertical-align: middle;"> 14.0.0.0.8 (13/06/2022) </p>				
+            <p class="lead text-center" style="color: #102e42;"> Faktura erraztuak Fakturazio/kontabilitate lehiotik (Account.move) egin ahal izateko TicketBai-eko moduloak (l10n_es_ticketbai_api y l10n_es_ticketbai) egokitzen dituen moduloa. TicketBaieko moduluak https://github.com/OCA/l10n-spain/ -en lortu ditzazkezu. </p>
+	    <ul>
+		  <li>Bezeroa anonimo bezala markatzen badegu (AEAT - Cliente an&#243;nimo) eta bezeroak NAN/IZF ez badu automatikoki faktura erraztu bat sortzen du</li>		
+		  <li>Faktura erraztuentzako kontabilitate liburu berri bat sortzen du (account.journal), bere sekuentzia eta egiaztapena errazteko.</li>
+		  <li>Faktura erraztuaren totala muga legala baiano handiago ez izatea egiaztatzen du.</li>
+		  <li>TicketBai aktibatuta edo desaktibatuta-rekin erabili daiteke.</li>
+		  <li>TicketBai aktibatuta izanda faktura erraztuak automatikoki bildaltzen dira.</li>
+		  <li>TicketBai-eko fitxategia moldatzen du faktura erraztu bat ala faktura erraztu rektifikatzaile bat dela adierazteko.</li>
+          <li>Ordua eta data fakturetara gehituta, fakturak ordenatu ahal izateko</li>
+	     </ul>
+      </div>
+    </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+    <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Instalazioa:</h2>
+        <h5 class="text-center" style="font-family: Montserrat, 'sans-serif';">Modulu Honek beste hauek behar ditu:</h5>
+        <ul>
+          <li>account</li>
+          <li>itu_log</li>
+	  <li>l10n_es_ticketbai</li>
+	  <li>itu_original_invoice_data</li>
+          <li>l10n_es_ticketbai_api</li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Ezarpenak:</h2>
+       <ul>
+          <li>Modulua instalatzerakoan Kontabilitate liburu berri bat sortzen du FS kodea eta 3000&euro; -ko mugarekin faktura erraztuentzako. </li>
+	  <li>Bezero bat anonimo bezala konfiguratzeko: </li>
+          <ul>
+		  <li>Bezeroetara joan &gt; kontatuaren izena  &gt; AEAT fitxa  &gt; </li>
+		  <li>Bezeroa anonimo bezala markatu (AEAT - Cliente an&#243;nimo)</li>
+		  <li>Herrialde bezala Espa&#241;a aukeratu eta NAN/IFK txurian utzi </li>
+		  <li>Pozizio fiscala bezala "Regimen Nacional" aukeratu </li>
+	  </ul>
+	  <li>Faktura erratuerako kontabilitate liburua konfigurazioak &gt; ezarpen orokorrak &gt; empresak &gt; empresa &gt; Faktura erraztua fitxan konfiguratu daiteke</li>
+	  <li>Faktura erraztuaren totalen muga legala konfigurazioak &gt; ezarpen orokorrak &gt; empresak &gt; empresa &gt; Faktura erraztua fitxan konfiguratu daiteke </li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Erabilpena: </h2>
+        <p dir="auto">Factura berri bat sortzerakoan bezeroa anonimoa den eta NAN/IFK duen egiaztatzen da. Anonimoa eta NAN/IFK ez badu faktura erraztu bar sortzen da automatikoki</p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+<div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Arazo ezagunak: </h2> 
+	<p>Faktura normalen sekuentzia sortugabe baduzu edo berritzea tokatzen bada moduloak errorea emanten du faktura erraztu bat sortzerakoan. </p>
+	<p>Akats hau faktura normal bat sortuta konpontzen da.</p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Argazkiak:        </h2>
+        <p dir="auto"><a href="#Images">Click hemen argazkiak ikusteko</a></p>
+    </div>
+  </div>
+</section>
+
+<div  style="border: 2px solid #00aef0; width:350px; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+				
+<section class="container" style="margin: 1rem auto 2rem;">
+    <div class="row" style="max-width:1540px;">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center" style="font-family: Montserrat, 'sans-serif';">Laguntza behar duzu?</h2>
+        </div>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="row d-flex justify-content-center align-items-center" style="max-width:1540px; margin: auto auto 2rem auto;">
+
+        <div class="col-lg-12" style="padding: 0rem 3rem 2rem; border-radius: 10px; margin-right: 3rem; ">
+
+            <div class="row mt-4">
+                <div class="col-lg-6" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+                    <a href="mailto:itusoftware@gmail.com" target="_blank" class="btn btn-block mb-2 deep_hover"
+                        style="text-decoration: none;  background-color: #4d4d4d; color: #FFF;  border-radius: 4px;"><i
+                            class="fa fa-envelope mr-2"></i>itusoftware@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>				
+				
+				
+				
+<!-- END OF BASQUE -->					
+				
+				
+<!-- END OF HERO -->
+
+<!-- FOOTER -->
+				
+<!-- Footer Section -->
+<section class="container oe_container" style="padding: 1em 3.5rem; background-color: #fff ; border-radius: 15px;">
+  <div class="row" style="max-width:1540px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+        <h2 id="Images" class="text-center" style="font-family: Montserrat, 'sans-serif';">Imagenes:        </h2>
+        <p dir="auto"><img src="images/fs_1.png" width="948" height="608" /></p>
+        <p dir="auto"><img src="images/fs_2.png" width="948" height="711" /></p>
+	<p dir="auto"><img src="images/fs_4.png" width="608" height="658" /></p>
+    </div>
+  </div>
+</section>				
+				
+				
+<!-- Footer -->
+<section class="oe_container" style="padding: 1rem 3rem 1rem;"></section>
+<div  style="border: 3px solid #00aef0; width: 100%; height: 2px; padding: 0; margin: 10px auto 0 auto;" />
+<!-- END OF FOOTER -->

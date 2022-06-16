@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="itu_easy_pay_register_form" model="ir.ui.view">
+            <field name="name">itu.easy_pay.itu_register.form</field>
+            <field name="model">itu.easy_pay.itu_register</field>
+            <field name="arch" type="xml">
+                <form string="Register Payment">
+                    <!-- Invisible fields -->
+                    <field name="line_ids" invisible="1"/>
+                    <field name="can_edit_wizard" invisible="1" force_save="1"/>
+                    <field name="can_group_payments" invisible="1" force_save="1"/>
+                    <field name="payment_type" invisible="1" force_save="1"/>
+                    <field name="partner_type" invisible="1" force_save="1"/>
+                    <field name="source_amount" invisible="1" force_save="1"/>
+                    <field name="source_amount_currency" invisible="1" force_save="1"/>
+                    <field name="source_currency_id" invisible="1" force_save="1"/>
+                    <field name="company_id" invisible="1" force_save="1"/>
+                    <field name="partner_id" invisible="1" force_save="1"/>
+                    <field name="country_code" invisible="1" force_save="1"/>
+
+                    <field name="show_partner_bank_account" invisible="1"/>
+                    <field name="require_partner_bank_account" invisible="1"/>
+                    <field name="hide_payment_method" invisible="1"/>
+                    <field name="available_payment_method_ids" invisible="1"/>
+                    <field name="company_currency_id" invisible="1"/>
+
+                    <field name="journal_id" required="1" invisible="1" force_save="1" />
+                    <field name="payment_method_id" invisible="1" force_save="1"/>
+                    <field name="partner_bank_id" invisible="1" force_save="1"/>
+                    <field name="group_payment" invisible="1" force_save="1"/>
+
+                    <field name="amount" invisible="1" force_save="1"/>
+                    <field name="currency_id" groups="base.group_multi_currency" invisible="1" force_save="1" />
+                    <field name="payment_date" invisible="1" force_save="1"/>
+                    <field name="communication" invisible="1" force_save="1"/>
+
+                    <field name="payment_difference" invisible="1" force_save="1"/>
+                    <field name="payment_difference_handling" nolabel="1" invisible="1" force_save="1"/>
+
+                    <field name="writeoff_account_id" invisible="1" force_save="1" />
+                    <field name="writeoff_label" invisible="1" force_save="1" />
+
+                    <group name="groupItuEasyPay">
+                        <field name="amount" force_save="1" readonly="1" />     
+                        <field name="received_money" widget="Text" style="font-size:50px; height:100px;"/>                        
+                        <field name="received_money" style="font-size:50px; height:100px;"/>
+                    </group>
+                    <footer>
+                        <button string="Create Payment" name="action_create_payments" type="object" class="oe_highlight"/>
+                        <button string="Cancel" class="btn btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
