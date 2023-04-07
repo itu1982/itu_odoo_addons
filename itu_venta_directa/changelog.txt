@@ -1,0 +1,27 @@
+14.0.0.0.3
+-------------------
+EN: 
+- Now Only work with product Lines
+- in Sales remember product price_unit when quantity is changed.
+- Add Check box to configuration to remember price_unit only for VD or for all products
+
+ES:
+- Ahora solo funciona con las lineas de producto
+- Ahora en ventas recuerda el precio unitario de los productos al cambiar la cantidad.
+- Añadido un check box para que recuerde solo el precio de VD o de todos los productos.
+
+EUS:
+- Orain produktu lerroekin dabil bakarrik.
+- Orain salmentetan, productuaren prezioa gogoratzen du kantitatea aldatzerakoan
+- Konfigurazioan CheckBox bat gehitu dugu, VD produktuaren prezioa soilik gogoratzeko ala guztien prezioa gogoratzeko.
+
+14.0.0.0.2
+-------------------
+EN: 
+- Repaired Singleton error.
+
+ES:
+- Reparado error singleton.
+
+EUS:
+- Singleton errorea zuzenduta.

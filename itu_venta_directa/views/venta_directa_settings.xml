@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.itu_venta_directa</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="100"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+			<xpath expr="//div[hasclass('settings')]" position="inside">
+				<div class="app_settings_block" data-string="ITU Venta Directa" string="ITU" data-key="itu_venta_directa" groups="base.group_user">
+					<h2>ITU VENTA DIRECTA SETTINGS</h2>
+					<div class="row mt16 o_settings_container" id="itu_venta_directa">
+						<div id="use_collaborative_pad" class="col-12 col-lg-6 o_setting_box" title="">
+							<div class="o_setting_left_pane">
+							</div>
+							<div class="o_setting_right_pane" name="itu_venta_directa_right">
+								<label for="ProductVD"/>
+								<field name="ProductVD" class="text-center oe_inline" />
+								<label for="RememberOnlyVDPriceUnit"/>
+								<field name="RememberOnlyVDPriceUnit" class="text-center oe_inline" />
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 o_setting_box">
+							<div class="o_setting_left_pane">
+							</div>
+							<div class="o_setting_right_pane">
+								<label for="ProductTemplateVD"/><br/>
+								<field name="ProductTemplateVD" class="text-center oe_inline" />
+							</div>                                    
+						</div>                            
+					</div>
+				</div>
+			</xpath>
+        </field>
+    </record>
+	
+	<record id="action_itu_repair_general_config" model="ir.actions.act_window">
+        <field name="name">itu_venta_directa_config</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'itu_venta_directa'}</field>
+    </record>
+</odoo>

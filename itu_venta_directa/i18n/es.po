@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* itu_venta_directa
+#
+#  <>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-07 14:49+0000\n"
+"PO-Revision-Date: 2023-04-07 \n"
+"Last-Translator:  <>\n"
+"Language-Team:  <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: itu_venta_directa
+#: model:ir.model,name:itu_venta_directa.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,field_description:itu_venta_directa.field_itu_venta_directa_installation__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,field_description:itu_venta_directa.field_itu_venta_directa_installation__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,field_description:itu_venta_directa.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:itu_venta_directa.field_itu_venta_directa_installation__display_name
+#: model:ir.model.fields,field_description:itu_venta_directa.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:itu_venta_directa.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,field_description:itu_venta_directa.field_account_move_line__id
+#: model:ir.model.fields,field_description:itu_venta_directa.field_itu_venta_directa_installation__id
+#: model:ir.model.fields,field_description:itu_venta_directa.field_res_config_settings__id
+#: model:ir.model.fields,field_description:itu_venta_directa.field_sale_order_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: itu_venta_directa
+#: model_terms:ir.ui.view,arch_db:itu_venta_directa.res_config_settings_view_form
+msgid "ITU"
+msgstr "ITU"
+
+#. module: itu_venta_directa
+#: model_terms:ir.ui.view,arch_db:itu_venta_directa.res_config_settings_view_form
+msgid "ITU VENTA DIRECTA SETTINGS"
+msgstr "OPCIONES ITU VENTA DIRECTA "
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,help:itu_venta_directa.field_res_config_settings__RememberOnlyVDPriceUnit
+msgid ""
+"In Sales, remember Price Unit only in VD Product when product quantity is "
+"changed"
+msgstr ""
+"En ventas,recordar precio unitario al cambiar la cantidad solo del producto "
+"VD."
+
+#. module: itu_venta_directa
+#: model:ir.model,name:itu_venta_directa.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,field_description:itu_venta_directa.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:itu_venta_directa.field_itu_venta_directa_installation____last_update
+#: model:ir.model.fields,field_description:itu_venta_directa.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:itu_venta_directa.field_sale_order_line____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,field_description:itu_venta_directa.field_itu_venta_directa_installation__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,field_description:itu_venta_directa.field_itu_venta_directa_installation__write_date
+msgid "Last Updated on"
+msgstr "Última actualizacion en"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,help:itu_venta_directa.field_res_config_settings__ProductTemplateVD
+#: model:ir.model.fields,help:itu_venta_directa.field_res_config_settings__ProductVD
+msgid "Product for Direct Sell"
+msgstr "Producto para venta directa"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,field_description:itu_venta_directa.field_res_config_settings__ProductTemplateVD
+msgid "Product template:"
+msgstr "Plantilla de producto para venta directa"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,field_description:itu_venta_directa.field_res_config_settings__ProductVD
+msgid "Product:"
+msgstr "Producto"
+
+#. module: itu_venta_directa
+#: model:ir.model.fields,field_description:itu_venta_directa.field_res_config_settings__RememberOnlyVDPriceUnit
+msgid "Remember only VD Price unit"
+msgstr "Recordar solo el Precio unitario de VD"
+
+#. module: itu_venta_directa
+#: model:ir.model,name:itu_venta_directa.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: itu_venta_directa
+#: model:product.template,uom_name:itu_venta_directa.Id_VD
+msgid "Uds."
+msgstr "Uds."
+
+#. module: itu_venta_directa
+#: model:product.template,name:itu_venta_directa.Id_VD
+msgid "VD"
+msgstr "VD"
+
+#. module: itu_venta_directa
+#: model:ir.model,name:itu_venta_directa.model_itu_venta_directa_installation
+msgid "itu.venta_directa.installation"
+msgstr "itu.venta_directa.installation"
+
+#. module: itu_venta_directa
+#: model:ir.actions.act_window,name:itu_venta_directa.action_itu_repair_general_config
+msgid "itu_venta_directa_config"
+msgstr "itu_venta_directa_config"

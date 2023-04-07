@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+	
+		<record id="Id_VD" model="product.template">
+			<!-- Verdaderamente se va a crear un product.product por que es un servicio, para crear un template habria que crear un consumible -->
+            <field name="name">VD</field>
+            <field name="categ_id" search="[('name', '=', 'Saleable')]" ></field>
+            <field name="purchase_line_warn">no-message</field>
+            <field name="sale_line_warn">no-message</field>
+			<field name="tracking">none</field>
+			<!--<field name="type">consu</field> -->
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_unit"></field>
+			<field name="uom_po_id" ref="uom.product_uom_unit"> </field>
+        </record>
+
+		<function model="itu.venta_directa.installation" name="ModuleDataInstallation" />
+    
+	</data>
+</odoo>
